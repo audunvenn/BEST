@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="file:/Users/audunvennesland/Documents/PhD/Development/eclipse_workspace/Best/airm_Common.owl" uri="airm_common.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="http://project-best.eu/owl/airm-mod/aircraft" uri="airm_aircraft.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="http://project-best.eu/owl/airm-mod/baseinfrastructure" uri="airm_baseinfrastructure.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="http://project-best.eu/owl/airm-mod/meteorology" uri="airm_meteorology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="http://project-best.eu/owl/airm-mod/stakeholders" uri="airm_stakeholders.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="duplicate:http://project-best.eu/owl/aixm" uri="aixm_geometry.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="duplicate:http://project-best.eu/owl/aixm" uri="aixm_obstacle.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="duplicate:http://project-best.eu/owl/aixm" uri="aixm_organisation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="duplicate:http://project-best.eu/owl/aixm" uri="aixm_shared.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="http://project-best.eu/owl/aixm/airportheliport" uri="aixm_airportheliport.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="http://project-best.eu/owl/iwxxm-mod/common" uri="iwxxm_common.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="http://project-best.eu/owl/iwxxm-mod/metar" uri="iwxxm_metar.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="http://project-best.eu/owl/iwxxm/taf" uri="iwxxm_taf.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1508231385576" name="http://www.best-project.org/owl/AIRM" uri="airm_mono.owl"/>
+    </group>
+</catalog>
