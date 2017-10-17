@@ -34,5 +34,16 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/HermiT/HermiT/HermiT.jar"/>
 	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/HermiT/HermiT/org.semanticweb.HermiT.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/AlignmentAPI/align-4.9/lib/align.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/AlignmentAPI/align-4.9/lib/alignsvc.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/WS4J/ws4j-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/RiTAWordNet/RiTa/library/rita.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/PelletReasoner/pellet-2.3.2-SNAPSHOT/lib/pellet-examples-2.3.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/PelletReasoner/pellet-2.3.2-SNAPSHOT/lib/pellet-owlapiv3-2.3.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/PelletReasoner/pellet-2.3.2-SNAPSHOT/lib/pellet-core-2.3.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/JWNL/jwnl14-rc2/jwnl.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/JAWS/jaws-bin.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/jfreechart-1.0.19/lib/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="/Users/audunvennesland/Documents/PhD/Development/jfreechart-1.0.19/lib/jfreechart-1.0.19.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

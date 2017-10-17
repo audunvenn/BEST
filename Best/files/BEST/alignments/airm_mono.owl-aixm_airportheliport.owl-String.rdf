@@ -8,7 +8,7 @@
   <xml>yes</xml>
   <level>0</level>
   <type>**</type>
-  <alext:method>compose.matchers.ISubMatcher#clone</alext:method>
+  <alext:method>compliancevalidator.matchers.ISubMatcher#clone</alext:method>
   <onto1>
     <Ontology rdf:about="http://www.best-project.org/owl/AIRM">
       <location>file:/Users/audunvennesland/git/Compose/compose/./files/BEST/airm_mono.owl</location>
