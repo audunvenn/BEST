@@ -1,0 +1,615 @@
+MeteorologicalAerodromeObservationReport&A report of observed and trend forecast weather phenomenon from the surface near an aerodrome.  This is a shared superclass for METAR and SPECI reports, which have identical reported information.
+MeteorologicalAerodromeObservationReport-status&The report status (e.g., normal, corrected)
+MeteorologicalAerodromeObservationReport-automatedStation&When true, this report was reported by an automated station.
+MeteorologicalAerodromeObservationReport-observation&The observation which resulted in the current meteorological conditions at an aerodrome
+MeteorologicalAerodromeObservationReport-trendForecast&The process that results in a trend forecast.
+
+When no change is expected to occur during a forecast period ("NOSIG") this is indicated by a single missing trend forecast with a nil reason of noSignificantChange
+
+			METAR&A routine observation made at an aerodrome throughout the day.  METAR observations are made (and distributed) at intervals of one hour or, if so determined by regional air navigation agreement, at intervals of one half-hour. 
+
+The information contained in METAR and SPECI is identical. SPECI is issued when conditions merit a non-routine report on conditions at an aerodrome.
+
+METARs are a routine report produced for dissemination beyond the aerodrome of origin, and are mainly intended for flight planning, VOLMET broadcasts and D-VOLMET.
+
+See ICAO Annex 3 / WMO No. 49-2 Table A3-2
+
+			SPECI&A special (i.e., non-routine) observation made at an aerodrome as needed. SPECI observations are made (and distributed) in accordance with criteria established by the meteorological authority, in consultation with the appropriate ATS authority, operators and others concerned. 
+
+The information contained in METAR and SPECI is identical. SPECI is issued when conditions merit a non-routine report on conditions at an aerodrome.
+
+SPECI reports are used for dissemination beyond the aerodrome of origin (mainly intended for flight planning, VOLMET broadcasts and D-VOLMET) unless METAR are issued at half-hourly intervals.
+
+SPECI is issued following the resumption of the issuance of METAR, as necessary, at aerodromes that are not operational throughout 24 hours in accordance with ICAO Annex 3 Section 4.3.1.
+
+See ICAO Annex 3 / WMO No. 49-2 Table A3-2
+
+			MeteorologicalAerodromeObservation&A specialized OM_Observation type used for reporting an aggregate set of observed meteorological conditions at an Aerodrome. The result of this observation type refers to an entity of type MeteorologicalAerodromeObservationRecord.
+
+ComplexSamplingMeasurement enforces the sampled feature be an Aerodrome.
+
+MeteorologicalAerodromeObservation has a sister Class for forecast information at an Aerodrome: MeteorologicalAerodromeTrendForecast.
+
+			MeteorologicalAerodromeObservationRecord&A specialized Record type containing meteorological conditions observed at an aerodrome.  
+
+When no clouds of operational significance or no weather of operational significance is observed, the NothingOfOperationalSignificance nilReason is used for the cloud or presentWeather association. When no clouds were detected by the automatic observing system, the NotDetectedByAutoSystem nilReason is used for the cloud association.
+MeteorologicalAerodromeObservationRecord-cloudAndVisibilityOK&When true, indicates that the observed cloud ceiling, horizontal visibility, and weather conditions are of no operational significance.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2. Also known as "CAVOK"
+
+When CAVOK conditions are observed, no other information on visibility, runway visual range, present weather, cloud amount, or cloud type is reported
+MeteorologicalAerodromeObservationRecord-airTemperature&The observed air temperature.  This is the temperature indicated by a thermometer exposed to the air in a place sheltered from direct solar radiation.
+MeteorologicalAerodromeObservationRecord-dewpointTemperature&The observed dew point temperature.  This is the temperature to which a given air parcel must be cooled at constant pressure and constant water vapor content in order for saturation to occur.
+MeteorologicalAerodromeObservationRecord-qnh&The observed QNH altimeter setting.
+
+Altitude setting (also known as QNH) is defined as barometric pressure adjusted to sea level. It is a pressure setting used by pilots, air traffic control (ATC), and low frequency weather beacons to refer to the barometric setting which, when set on an aircraft's altimeter, will cause the altimeter to read altitude above mean sea level within a certain defined region.
+
+			MeteorologicalAerodromeTrendForecast&A specialized OM_Observation type used for reporting an aggregate set of forecast meteorological conditions at an Aerodrome. The result of this observation type refers to an entity of type MeteorologicalAerodromeTrendForecastRecord.
+
+MeteorologicalAerodromeTrendForecast additionally enforces that the sampled feature must be an Aerodrome
+
+MeteorologicalAerodromeTrendForecasts are reported in surface observation reports such as SPECI and METAR. MeteorologicalAerodromeTrendForecast has a sister class for trend forecast information at an Aerodrome (MeteorologicalAerodromeObservation) which is also reported on a METAR and SPECI for observed phenomena.  This class is also related but not identical to MeteorologicalAerodromeForecast which is reported on a TAF - conditions reported in trend forecasts in METAR/SPECI differ from forecast groups in a TAF.
+
+			MeteorologicalAerodromeTrendForecastRecord&A specialized Record type containing meteorological conditions for trend forecasting at an aerodrome.  This class is also related but not identical to MeteorologicalAerodromeForecastRecord which is reported on a TAF - conditions reported in trend forecasts in METAR/SPECI differ from forecast groups in a TAF.
+
+When no clouds of operational significance or no weather of operational significance is predicted, the NothingOfOperationalSignificance nilReason should be used for the cloud or presentWeather association.  When no clouds were detected by the automatic observing system, the NotDetectedByAutoSystem nilReason should be used for the cloud association.
+MeteorologicalAerodromeTrendForecastRecord-changeIndicator&The change indicator for this trend forecast - becoming, temporary conditions, or no significant change
+MeteorologicalAerodromeTrendForecastRecord-cloudAndVisibilityOK&When true, indicates that the observed cloud ceiling, horizontal visibility, and weather conditions are of no operational significance.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2. Also known as "CAVOK"
+
+When CAVOK conditions are observed, no other information on visibility, runway visual range, present weather, cloud amount, or cloud type is reported
+MeteorologicalAerodromeTrendForecastRecord-prevailingVisibility&The prevailing horizontal visibility reported in a trend forecast
+MeteorologicalAerodromeTrendForecastRecord-prevailingVisibilityOperator&The reported relational operator for the prevailing horizontal visibility.  When reported, this operator is reported in conjunction with prevailing visibility.
+
+To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the operator is reported as "above".  
+
+When no operator is reported, prevailing visibility represents an exact value with identical semantics to other measured quantities
+
+			AerodromeSurfaceWind&An aggregation of surface wind conditions typically reported together at an aerodrome, including wind direction information, wind speed, and wind gusts.  
+
+Wind direction is reported according to ICAO Annex 3 / WMO No. 49-2 Section 4.1.5.2b:
+"variations from the mean wind direction during the past 10 minutes is reported as follows, if the total variation is 60 or more:
+1) when the total variation is 60 or more and less than 180 and the wind speed is 1.5 m/s (3 kt) or more, such directional variations are reported as the two extreme directions between which the surface wind has varied;
+2) when the total variation is 60 or more and less than 180 and the wind speed is less than 1.5 m/s (3 kt), the wind direction is reported as variable with no mean wind direction; or
+3) when the total variation is 180 or more, the wind direction is reported as variable with no mean wind direction"
+AerodromeSurfaceWind-variableDirection&When true, indicates that the wind direction is variable.  A wind direction value may still be reported
+AerodromeSurfaceWind-meanWindDirection&The observed average wind direction from which the wind is blowing over the past ten minutes.  Not reported when winds are variable
+AerodromeSurfaceWind-meanWindSpeed&The average observed wind speed over the past ten minutes
+
+ICAO Annex 3 / WMO No. 49-2:
+Section 4.1.5.2a
+AerodromeSurfaceWind-windGust&The maximum wind speed observed over the past ten minutes
+
+ICAO Annex 3 / WMO No. 49-2:
+Section 4.1.5.2c
+AerodromeSurfaceWind-extremeClockwiseWindDirection&The extreme clockwise direction from which the wind is blowing, inclusive.
+
+ICAO Annex 3 / WMO No. 49-2:
+Section 4.1.5.2b
+AerodromeSurfaceWind-extremeCounterClockwiseWindDirection&The extreme counter-clockwise direction from which the wind is blowing, inclusive.
+
+ICAO Annex 3 / WMO No. 49-2:
+Section 4.1.5.2b
+
+			AerodromeHorizontalVisibility&An aggregation of horizontal visibility conditions typically reported together at an aerodrome, including the prevailing visibility and minimum visibility.  
+AerodromeHorizontalVisibility-prevailingVisibility&The reported prevailing horizontal visibility at the surface that is representative of the aerodrome.
+
+The greatest visibility value, observed in accordance with the definition of "visibility", which is reached within at least half the horizon circle or within at least half of the surface of the aerodrome. These areas could comprise contiguous or non-contiguous sectors.
+
+Note: This value may be assessed by human observation and/or instrumented systems. When instruments are installed, they are
+used to obtain the best estimate of the prevailing visibility.
+
+To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the prevailing visibility operator is reported as "above".
+
+ICAO Annex 3 / WMO No. 49-2:
+Section 4.2.4.4b
+AerodromeHorizontalVisibility-prevailingVisibilityOperator&The reported relational operator for the prevailing horizontal visibility.  When reported, this operator is reported in conjunction with prevailing visibility.
+
+To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the operator is reported as "above".  
+
+When no operator is reported, prevailing visibility represents an exact value with identical semantics to other measured quantities
+AerodromeHorizontalVisibility-minimumVisibility&The minimum observed visibility.
+
+ICAO Annex 3 / WMO No. 49-2 Section 4.2.4.4a:
+"When the visibility is not the same in different directions and
+a) when the lowest visibility is different from the prevailing visibility, and 
+  1) less than 1 500 m or 
+  2) less than 50 percent of the prevailing visibility and less than 5000 m; the lowest visibility observed should also be reported and,when possible, its general direction in relation to the aerodrome reference point indicated by reference to one of the
+eight points of the compass. If the lowest visibility is observed in more than one direction, then the most
+operationally significant direction should be reported; and
+b) when the visibility is fluctuating rapidly, and the prevailing visibility cannot be determined, only the lowest visibility
+should be reported, with no indication of direction."
+AerodromeHorizontalVisibility-minimumVisibilityDirection&The direction of the minimum visibility relative to the reporting station.  This is optional in cases where minimum visibility is reported but the visibility is fluctuating rapidly.  Minimum visibility is reported in cardinal and inter-cardinal directions (N, NE, E, SE, S, SW, W, and NW)
+
+			AerodromeSeaState&An aggregation of sea state conditions typically reported together at an aerodrome.  This includes information on sea-surface temperature and either the state of the sea or significant wave height from aeronautical meteorological stations established on offshore structures in support of helicopter operations
+AerodromeSeaState-seaSurfaceTemperature&The sea-surface temperature observed by aeronautical meteorological stations established on offshore structures in support of helicopter operations.
+
+The term sea surface temperature is generally meant to be representative of the upper few meters of the ocean as opposed to the skin temperature, which is the temperature of the upper few centimeters.
+
+ICAO Annex 3 / WMO No. 49-2:
+Section 4.8.1.5a
+AerodromeSeaState-significantWaveHeight&The significant wave height observed
+AerodromeSeaState-seaState&The state of the sea observed by aeronautical meteorological stations established on offshore structures in support of helicopter operations
+
+ICAO Annex 3 / WMO No. 49-2:
+Section 4.8.1.5a
+
+WMO 306:
+Table 3700
+
+			SeaSurfaceState&Categorical assessment of sea surface state (or other large open body of water) based on height of waves.
+
+Height in metres : Category
+- 0 metres : Calm (glassy)
+- 0-0.1 metres : Calm (rippled)
+- 0.1-0.5 metres : Smooth
+- 0.5-1.25 metres : Slight
+- 1.25-2.5 metres : Moderate
+- 2.5-4 metres : Rough
+- 4-6 metres : Very rough
+- 6-9 metres : High
+- 9-14 metres : Very high
+- &gt;14 metres : Phenomenal
+
+See WMO No. 306 Vol I.1 code table 3700 "State of the sea" and WMO No. 306 Vol I.2 FM 94 BUFR code table 0 22 061 "State of the sea".
+
+			AerodromeRunwayVisualRange&An aggregation of runway visual range conditions for a single runway, typically reported together at an aerodrome
+AerodromeRunwayVisualRange-runway&The runway to which reported runway visual range information applies
+AerodromeRunwayVisualRange-meanRVR&The mean recent runway visual range value observed. This mean represents the 10 minute average for observed RVR except when the 10-minute period immediately preceding the observation includes a marked discontinuity in runway visual range values, only those values occurring after the discontinuity is used for obtaining mean values.
+
+To report a mean RVR of at least 2000 meters, mean RVR is reported as 2000 meters and the operator is reported as "above"
+
+Annex 3:
+Table A3-2 "RVR/RVR"
+Section 4.3.6.6
+AerodromeRunwayVisualRange-meanRVROperator&The reported relational operator for the mean RVR. When reported, this operator is reported in conjunction with mean RVR.  
+
+To report a mean RVR of at least 2000 meters, mean RVR is reported as 2000 meters and the operator is reported as "above".
+
+When no operator is reported, mean RVR represents an exact value with identical semantics to other measured quantities
+AerodromeRunwayVisualRange-pastTendency&The runway visual range tendency (up, down, none).
+
+If the runway visual range values during the 10-minute period have shown a distinct tendency, such that the mean during the first 5 minutes varies by 100 m or more from the mean during the second 5 minutes of the period, this should be indicated. When the variation of the runway visual range values shows an upward or downward tendency, this should be indicated by "Up" or "Down", respectively. In circumstances when actual fluctuations during the 10-minute period show no distinct tendency, this should be indicated using "No Change?. When indications of tendency are not available, no information should be reported
+
+ICAO Annex 3 / WMO No. 49:
+Table A3-2 Note 9
+Section 4.3.6.6a
+
+			VisualRangeTendency&The tendency of visual range (e.g., upward, downward).  Defined for the purposes of aviation meteorology reporting of the visual range on runways (WMO No. 49-2).
+
+If the [runway] visual range (RVR) values during the 10-minute period preceding the nominal observation time show a distinct upward or downward tendency such that the mean during the first five minutes varies by 100 metres or more from the mean in the second five minutes of the period, an UPWARD [U] or DOWNWARD [D] tendency is recorded. When no distinct change in RVR is observed, NO CHANGE [N] is recorded.
+
+See WMO No. 306 Vol I.2 FM 94 BUFR code-table 0 20 018 "Tendency of runway visual range".
+VisualRangeTendency-UPWARD&Upward (increasing) tendency
+VisualRangeTendency-NO_CHANGE&No change
+VisualRangeTendency-DOWNWARD&Downward (decreasing) tendency
+
+			AerodromePresentWeather&The present weather observed at, or in near vicinity of, an aerodrome.
+
+Only a specific set of weather phenomenon are reported within aviation meteorology as defined in Regulation ICAO Annex 3 / WMO No. 49-2.
+
+This CodeList is specifically defined for aviation purposes as defined in WMO No. 49-2. A superset of definitions are defined in WMO No. 306 Vol I.1 code-table 4678 "Significant weather phenomena".
+
+			AerodromeObservedClouds&An aggregation of observed cloud conditions typically reported together at an aerodrome, including cloud types, cloud layers, and vertical visibility.  
+AerodromeObservedClouds-amountAndHeightUnobservableByAutoSystem&An automatic observing system observed cumulonimbus clouds or towering cumulus clouds but the cloud amount and height could not be observed
+<b><u>
+</u></b>ICAO Annex 3 / WMO No. 49-2:
+Section 4.5.4.5c - When cumulonimbus clouds or towering cumulus clouds are detected by the automatic observing system and the cloud amount and the height of cloud base cannot be observed, the cloud amount and the height of cloud base should be replaced by "//////"
+AerodromeObservedClouds-verticalVisibility&The reported vertical visibility.  Vertical visibility is defined as the vertical visual range into an obscuring medium.
+
+Note: vertical visibility is only reported in aviation-specific WMO Code-forms (FM-15 METAR, FM-16 SPECI and FM-51 TAF) thus prevailing visibility is considered to be an aviation-specific quantity.
+
+When the sky is obscured and the value of the vertical visibility cannot be determined by the automatic observing system due to a temporary failure of the system/sensor ("VV///") the vertical visibility is missing with a nil reason of notObservable
+
+			AerodromeRecentWeather&Weather phenomenon of operational significance to aviation observed during the period since the last routine report, or last hour, whichever is shorter, but not at the time of observation.
+
+Only a specific set of weather phenomenon are reported within aviation meteorology as defined in Regulation ICAO Annex 3 / WMO No. 49-2.
+
+This CodeList is specifically defined for aviation purposes as defined in WMO No. 49-2. A superset of definitions are defined in WMO No. 306 Vol I.1 code-table 4678 "Significant weather phenomena".
+
+			AerodromeWindShear&An aggregation of wind shear conditions typically reported together at an aerodrome, including the set of affected runways. 
+AerodromeWindShear-allRunways&When true, all runways are observed to have wind shear
+AerodromeWindShear-runway&The specific runway(s) affected by wind shear at this aerodrome. No specific runways are reported when all runways are affected by wind shear
+
+			AerodromeRunwayState&An aggregation of runway conditions typically reported together at an aerodrome, including the runway contamination, friction, and deposits.  
+AerodromeRunwayState-allRunways&When true, indicates the reported conditions apply to all runways
+AerodromeRunwayState-cleared&Indicates that reported runway has been cleared of meteorological deposits, such as snow.
+
+ICAO Annex 3 / WMO No. 49-2:
+"CLRD"
+
+Section 4.8.1.5, Table A3-2 "State of the runway"
+AerodromeRunwayState-estimatedSurfaceFrictionUnreliable&When true, the estimated surface friction is unreliable and is not reported.
+
+WMO 306:
+Table 0366
+AerodromeRunwayState-runway&The runway to which the conditions apply.  The runway may be missing in cases where all runways are closed due to snow
+AerodromeRunwayState-depositType&The type of runway deposit, such as damp conditions, wet snow, or ice.
+
+WMO 306:
+Table 0919
+AerodromeRunwayState-contamination&Proportion of runway surface that is contaminated - usually expressed as a percentage of the total runway area.
+
+WMO reporting procedures require that contamination is reported in the following categories:
+- less than 10%;
+- between 11% and 25%;
+- between 26% and 50%; and
+- more than 50%. 
+
+See WMO No. 306:
+- WMO Code table 0519
+- BUFR Code table 0 20 087
+AerodromeRunwayState-depthOfDeposit&Depth of deposit on the surface of the runway.
+
+See WMO No. 306 WMO Code table 1079.
+AerodromeRunwayState-estimatedSurfaceFriction&The estimated surface friction for the affected runway.  Between 0.0 and 0.9.  
+
+When braking conditions are not reported and/or the runway is not operational estimatedSurfaceFriction will not be reported.
+
+WMO 306:
+Table 0366
+AerodromeRunwayState-snowClosure&Indicates whether the aerodrome is closed due to an extreme deposit of snow.  This affects all runways
+<b>
+</b>WMO 306:
+Section 15.13.6.1
+
+			RunwayContamination&Extent of runway surface that is contaminated (covered)
+
+			RunwayDeposits&Type of deposit on a runway.
+
+See WMO No. 306 Vol I.1 code table 0919 and WMO No. 306 Vol I.2 FM 94 BUFR code table 0 20 086 "Runway deposits".
+
+			MeteorologicalAerodromeReportStatus&The status of a MeteorologicalAerodromeObservationReport (e.g., a normal issuance, correction of an earlier report, etc.)
+MeteorologicalAerodromeReportStatus-NORMAL&Normal report status: not a correction of an earlier report
+MeteorologicalAerodromeReportStatus-CORRECTION&A correction of an earlier report
+MeteorologicalAerodromeReportStatus-MISSING&The report is missing ("NIL" from ICAO Annex 3 / WMO No. 49)
+
+			ForecastChangeIndicator&Change qualifier of a trend-type forecast or an aerodrome forecast.
+
+Defined in WMO No. 306 Vol I.1; FM-15 METAR, FM-16 SPECI and FM-51 TAF.
+Also see WMO No. 306 Vol I.2 Part B FM 94 BUFR code-table 0 08 016 'Change qualifier of a trend forecast or an aerodrome forecast'.
+ForecastChangeIndicator-NO_SIGNIFICANT_CHANGES&No significant changes are forecast (NOSIG)
+ForecastChangeIndicator-BECOMING&When the change is forecast to commence at the beginning of the forecast period and be completed by the end of that period, or when the change is forecast to occur within the forecast period but the time of the change is uncertain (possibly shortly after the beginning of the forecast period, or midway or near the end of that period), the change is indicated by only the change indicator BECMG.
+ForecastChangeIndicator-TEMPORARY_FLUCTUATIONS&The change indicator TEMPO is used to describe expected temporary fluctuations to meteorological conditions which reach or pass specified threshold criteria and last for a period of less than one hour in each instance and in the aggregate cover less than half of the forecast period during which the fluctuations are expected to occur.
+
+TAF&An Aerodrome Forecast (TAF) report is a routine aerodrome forecast intended for distribution beyond an aerodrome.  TAF reports report base forecast conditions, and modifications to those conditions throughout the valid period.
+
+TAF reports include similar information to a METAR/SPECI trend forecast. However, TAF forecast information includes additional detail.
+
+Aerodromes can issue both METAR/SPECI and TAF reports on a routine basis, but TAFs are not issued by every METAR-reporting aerodrome.
+
+The issuance of a new forecast by a meteorological office, such as a TAF, cancels any forecast of the same type previously issued for the same place and for the same period of validity or part thereof.
+
+Prevailing conditions and forecast changes differ in that the prevailing conditions can include temperatures, base conditions do not include a change indicator, and that forecast changes may report no significant weather (NSW). Rather than have two class hierarchies, constraints are present ensuring that each (base and forecast conditions) only include relevant information
+TAF-status&The status of this report, including amended, cancelled, normal, or corrected.  
+
+Missing reports indicate that a report was not issued from the responsible reporting party as expected.  Missing reports are typically issued by third parties that were expecting a report.
+TAF-issueTime&The time at which this report was issued.  Note that this should be identical to the resultTime of each MeteorologicalAerodromeForecast, whose results are made available at the same time as this report.  TAF reports have an issueTime to assist in discovery and to provide unambiguous semantics at the report level.
+TAF-validTime&The time frame at which this report is valid.  All forecast elements should be valid within this period
+TAF-baseForecast&The prevailing conditions.  Mandatory in all cases except missing or cancelled reports
+TAF-changeForecast&Forecast that modifies the base forecast.  While there is no maximum number of forecasts, this should normally not exceed five in number.
+<b><u>
+</u></b>ICAO Annex 3 / WMO No. 49-2:
+Section 1.5: "The number of change and probability groups should be kept to a minimum and should not normally exceed five groups".
+TAF-previousReportAerodrome&The aerodrome of the previously-issued report being amended or cancelled
+TAF-previousReportValidPeriod&The valid time period for the previously amended and/or cancelled report
+
+			MeteorologicalAerodromeForecast&A specialized OM_Observation type used for reporting an aggregate set of forecast meteorological conditions at an Aerodrome. The result of this observation type refers to an entity of type MeteorologicalAerodromeForecastRecord.
+
+MeteorologicalAerodromeForecast enforces the following additional constraints:
+<ul>
+	<li>The sampled feature must be an Aerodrome</li>
+</ul>
+
+This class is also related but not identical to MeteorologicalAerodromeTrendForecast which is reported on a METAR/SPECI - conditions reported in trend forecasts in METAR/SPECI differ from forecast groups in a TAF.
+
+The TAF forecast group from/to variants (FM, TL, AT, etc.) are represented on the OM_Observation validTime, which is always an instance of TM_Period. When there is only an instant at which a condition occurs, the start and end time are the same
+
+			MeteorologicalAerodromeForecastRecord&A specialized Record type containing meteorological conditions forecast at an aerodrome.  This class is also related but not identical to MeteorologicalAerodromeTrendForecastRecord, which is reported on a METAR/SPECI - conditions reported in trend forecasts in METAR/SPECI differ from forecast groups in a TAF.
+
+When no clouds of operational significance or no weather of operational significance is predicted, the nothingOfOperationalSignificance nilReason should be used for the cloud or presentWeather association.  
+
+Note that the TAC representations for "FM", "TL", and "AT" are represented by the phenomenonTime on the change forecast (MeteorologicalAerodromeForecast):
+    FM and TL - a phenomenonTime with a TimePeriod (start is FM and end is TL)
+    TL - a phenomenonTime with a TimePeriod (start is beginning of forecast validity and end is TL)
+    FM - a phenomenonTime with a TimePeriod (start is FM and end is end of forecast validity)
+    AT - a phenomenonTime with a TimeInstant
+MeteorologicalAerodromeForecastRecord-changeIndicator&The type of change being reported (FROM, BECOMING,  TEMPORARY, etc.).
+
+A change indicator is required for all MeteorologicalAerodromeForecastRecords excepting reported base conditions.
+MeteorologicalAerodromeForecastRecord-cloudAndVisibilityOK&When true, indicates that the observed cloud ceiling, horizontal visibility, and weather conditions are of no operational significance.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2. Also known as "CAVOK"
+
+When CAVOK conditions are observed, no other information on visibility, runway visual range, present weather, cloud amount, or cloud type is reported
+MeteorologicalAerodromeForecastRecord-prevailingVisibility&The prevailing horizontal visibility, mandatory except when ceiling and visibility is reported as OK
+MeteorologicalAerodromeForecastRecord-prevailingVisibilityOperator&The reported relational operator for the prevailing horizontal visibility.  When reported, this operator is reported in conjunction with prevailing visibility.
+
+To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the operator is reported as "above".  
+
+When no operator is reported, prevailing visibility represents an exact value with identical semantics to other measured quantities
+
+			TAFReportStatus&The report status for a TAF report (e.g., a normal issuance, an amendment of an earlier report, a cancellation of an earlier report)
+TAFReportStatus-NORMAL&An normal issuance of a TAF
+TAFReportStatus-AMENDMENT&An amendment of an earlier TAF
+TAFReportStatus-CANCELLATION&A cancellation of an earlier TAF
+TAFReportStatus-CORRECTION&A correction of an earlier TAF
+TAFReportStatus-MISSING&The report is missing ("NIL" from ICAO Annex 3 / WMO No. 49)
+
+			AerodromeForecastChangeIndicator&The forecast change indicator type, including temporary, permanent, or probable conditions.  This is an extension of ForecastChangeIndicator that includes report-specific entries, and in particular the 30 and 40% probability conditions.
+
+Note that the TAC representations for "FM", "TL", and "AT" are represented by the phenomenonTime on the change forecast (MeteorologicalAerodromeForecast):
+    FM and TL - a phenomenonTime with a TimePeriod (start is FM and end is TL)
+    TL - a phenomenonTime with a TimePeriod (start is beginning of forecast validity and end is TL)
+    FM - a phenomenonTime with a TimePeriod (start is FM and end is end of forecast validity)
+    AT - a phenomenonTime with a TimeInstant
+
+Design note:
+These values represent the operationally-representable types, but are not very general-purpose.  Especially with temporary conditions and probability it might be better to turn these into a "probability" property and constraints could be applied to the value to match operational constraints
+AerodromeForecastChangeIndicator-BECOMING&Conditions are expected to reach or pass through specified threshold values at a regular or irregular rate and at an unspecified time during the time period.  The time period should normally not exceed 2 hours but in any case should not exceed 4 hours.
+
+ICAO Annex 3 / WMO No. 49-2:
+"BECMG"
+AerodromeForecastChangeIndicator-TEMPORARY_FLUCTUATIONS&Expected temporary fluctuations to meteorological conditions which reach or pass specified threshold criteria and last for a period of less than one hour in each instance and in the aggregate cover less than half of the forecast period during which the fluctuations are expected to occur.
+
+ICAO Annex 3 / WMO No. 49-2:
+"TEMPO"
+AerodromeForecastChangeIndicator-FROM&One set of prevailing weather conditions is expected to change significantly and more or less completely to a different set of conditions. Conditions in a FROM group supersede conditions in earlier groups.
+
+ICAO Annex 3 / WMO No. 49-2:
+"FM"
+AerodromeForecastChangeIndicator-PROBABILITY_30&A 30% probability of occurrence of an alternative value of a forecast element or elements.
+
+ICAO Annex 3 / WMO No. 49-2:
+"PROB30"
+AerodromeForecastChangeIndicator-PROBABILITY_30_TEMPORARY_FLUCTUATIONS&A 30% probability of occurrence of temporary conditions of an alternative value of a forecast element or elements.
+
+ICAO Annex 3 / WMO No. 49-2:
+"PROB30 TEMPO"
+AerodromeForecastChangeIndicator-PROBABILITY_40&A 40% probability of occurrence of an alternative value of a forecast element or elements.
+
+ICAO Annex 3 / WMO No. 49-2:
+"PROB40"
+AerodromeForecastChangeIndicator-PROBABILITY_40_TEMPORARY_FLUCTUATIONS&A 40% probability of occurrence of temporary conditions of an alternative value of a forecast element or elements.
+
+ICAO Annex 3 / WMO No. 49-2:
+"PROB40 TEMPO"
+
+			AerodromeAirTemperatureForecast&An aggregation of air temperature forecast conditions typically reported together at an aerodrome, including the minimum and maximum anticipated air temperatures and when they occur.
+
+AerodromeAirTemperatureForecast is only reported on base conditions on a TAF, not change forecasts.
+AerodromeAirTemperatureForecast-maximumAirTemperature&The maximum air temperature
+
+ICAO Annex 3 / WMO No. 49-2:
+"TX"
+AerodromeAirTemperatureForecast-maximumAirTemperatureTime&The time of occurrence of the maximum air temperature.  This must be within the period of the phenomenon time for this forecast record
+ICAO Annex 3 / WMO No. 49-2:
+"TX"
+AerodromeAirTemperatureForecast-minimumAirTemperature&The minimum air temperature
+ICAO Annex 3 / WMO No. 49-2:
+"TN"
+AerodromeAirTemperatureForecast-minimumAirTemperatureTime&The time of occurrence of the minimum air temperature.  This must be within the period of the phenomenon time for this forecast record
+
+ICAO Annex 3 / WMO No. 49-2:
+"TN"
+
+			
+			
+			SIGMET&A SIGMET (significant meteorological) report. SIGMETs report the occurrence and/or expected occurrence of specified en-route weather phenomena which may affect the safety of aircraft operations, and of the development of those phenomena over time. 
+
+The SIGMET report class represents the base SIGMET types that may be reported such as squall lines, thunderstorms, dust storms, turbulence, etc. Tropical cyclone and volcanic ash SIGMET reports are subclasses of SIGMET due to their ability to report additional information, including volcano/tropical cyclone identification and forecast position(s).
+
+SIGMETs may report either observed or forecast hazardous conditions. Additionally, a forecast position may be reported.
+SIGMET-status&The SIGMET report status - cancelled or normal
+SIGMET-issuingAirTrafficServicesUnit&The ATS unit serving the FIR or CTA to which the SIGMET refers
+
+ICAO Annex 3 / WMO No. 49-2:
+A6-1: "Location indicator of FIR/CTA"
+SIGMET-originatingMeteorologicalWatchOffice&MWO originating this report
+SIGMET-sequenceNumber&The sequence number of this message.  For example: "5", "A3", or "2"
+SIGMET-validPeriod&The valid period for the entire report, including all observations and forecast conditions.  Each observation/forecast phenomenon includes its own period of validity for described meteorological conditions, which is represented as the O&amp;M Observation validTime.
+
+For example, an issued tropical cyclone SIGMET may be valid from 1600 UTC to 2200 UTC with an observed position at 1600 UTC and a forecast position of the centre of the tropical cyclone at 2200 UTC.  In this case the SIGMET validPeriod would be 1600 UTC to 2200 UTC, the analysis validTime would be 1600 UTC, and the forecastPositionAnalysis validTime would be 2200 UTC.
+SIGMET-cancelledSequenceNumber&The cancelled SIGMET sequence number.  Mandatory when this is a cancellation report, must be missing otherwise
+
+Examples:
+YUDD SIGMET 2 VALID ...
+YUDD SIGMET A3 VALID ...
+SIGMET-cancelledValidPeriod&The valid period of a previous SIGMET that is cancelled by this SIGMET.  Mandatory when this is a cancellation report, must be missing otherwise
+SIGMET-phenomenon&The reported phenomenon, such as thunderstorm, tropical cyclone, icing, mountain wave, etc.
+
+The expected end of occurrence of volcanic ash ("NO VA EXP") is indicated with a missing SIGMET phenomenon with a nil reason of nothingOfOperationalSignificance
+SIGMET-analysis&SIGMETs may include the same phenomenon covering more than one area within the FIR/UIR/CTA, as well as observed and forecast conditions for each of these reported areas.  All combinations of observations and forecasts of meteorological conditions, including changing conditions, are represented by their own SIGMETEvolvingMeteorologicalCondition.
+
+Each analysis has a single EvolvingMeteorologicalCondition as its result.  
+SIGMET-forecastPositionAnalysis&One or more forecast positions at the end of the valid period - one for each phenomenon area within an FIR.  These are modeled as a single OM_Observation sub-type with a feature collection result due to the shared time and other observation metadata for all forecast positions.
+
+			TropicalCycloneSIGMET&A SIGMET that reports the presence of a tropical cyclone conditions.  This extends the base SIGMET type by including additional information necessary for tropical cyclones.
+TropicalCycloneSIGMET-tropicalCyclone&The tropical cyclone being reported in this SIGMET
+
+			VolcanicAshSIGMET&A SIGMET that reports the presence of volcanic ash conditions hazardous to flight.  This extends the base SIGMET type by including additional information necessary for volcanoes and volcanic ash.
+VolcanicAshSIGMET-eruptingVolcano&The volcano that is erupting
+
+			SIGMETEvolvingConditionAnalysis&A specialized OM_Observation type used for reporting an aggregate set of meteorological conditions hazardous to flight over a large airspace, including anticipated characteristics. The result of this observation type refers to a single EvolvingMeteorologicalCondition which represents a SIGMET observation or forecast of meteorological conditions.
+
+			EvolvingMeteorologicalCondition&Conditions that indicate the presence of a specific SIGMET phenomenon such as volcanic ash or a thunderstorm, along with expected changes to the phenomenon such as intensity, speed, and direction.  These conditions are reported with OBS/FCST conditions on all SIGMET types.
+
+TC TOP (ABV and BLW) conditions are represented by the vertical component of the geometry.  For example: CB TOP FL500 is represented as a missing lowerLimit and an upperLimit of 500FL.  
+
+Design note:
+This class is no longer a subclass of MeteorologicalPosition. This change was made to ensure that there is no confusion between the two classes when results from different OM_Observation types are populated.  Constraints could be used to ensure a specific superclass but not its subclasses are valid, but this would disallow the use of sub-classes of this type for other purposes such as regional extension
+EvolvingMeteorologicalCondition-intensityChange&The expected change in intensity for the reported meteorological condition (e.g., intensifying, weakening, or no change) determined at the time of SIGMET analysis based on the current state of the meteorological condition
+EvolvingMeteorologicalCondition-directionOfMotion&The expected direction of movement of a meteorological condition. When no movement is expected, this is a http://www.opengis.net/def/nil/OGC/0/inapplicable nilReason and the speedOfMotion will be 0.
+EvolvingMeteorologicalCondition-geometry&The expected geographic region affected by the reported phenomenon at a particular time (thunderstorms, volcanic ash, etc.).  This geometry covers all combinations of phenomenon historically reported in ICAO Annex 3 / WMO No. 49-2: a boundary with a base and top, a TC center position, and a VA line with a width
+EvolvingMeteorologicalCondition-speedOfMotion&The expected speed of movement of a meteorological condition. When no movement is expected, this will have a value of 0 and directionOfMotion will have a http://www.opengis.net/def/nil/OGC/0/inapplicable nilReason.
+
+			SIGMETPositionAnalysis&A specialized OM_Observation type used for reporting the forecast position of meteorological conditions hazardous to flight. The result of this observation type refers to one or more MeteorologicalPositions which represents the forecast positions of SIGMET phenomena.
+
+			MeteorologicalPositionCollection&A collection of MeteorologicalPositions, each representing a location where meteorological conditions exist.  All members of this collection are of type MeteorologicalPosition.
+
+			MeteorologicalPosition&Conditions that indicate the presence of a specific SIGMET phenomenon such as volcanic ash or a thunderstorm.  Used to represent the forecast positions of SIGMET phenomena.
+
+TC TOP (ABV and BLW) conditions are represented by the vertical component of the geometry.  For example: CB TOP FL500 is represented as a missing lowerLimit and an upperLimit of 500FL. 
+
+In cases where the position covers an entire FIR or CTA, ("ENTIRE CTA or ENTIRE FIR" from ICAO Annex 3 / WMO No. 49-2) the geometry should be an xlink to the sampled feature for this SIGMET.
+MeteorologicalPosition-geometry&The geographic region affected by the reported phenomenon at a particular time (thunderstorms, volcanic ash, etc.).  This geometry covers all combinations of phenomenon historically reported in Annex 3: a boundary with a base and top, a TC center position, and a VA line with a width
+
+			ExpectedIntensityChange&Expected change in intensity for (significant) meteorological phenomena.
+
+See WMO No. 306 Vol I.2 Part B FM 94 BUFR code-table 0 20 028 'Expected change in intensity'.
+ExpectedIntensityChange-NO_CHANGE&No change (NC)
+ExpectedIntensityChange-WEAKEN&Forecast to weaken (WKN)
+ExpectedIntensityChange-INTENSIFY&Forecast to intensify (INTSF)
+
+			SIGMETReportStatus&The status of a SIGMET report (e.g., a normal issuance, a cancellation of an earlier SIGMET)
+SIGMETReportStatus-NORMAL&A normal SIGMET report (not a cancellation)
+SIGMETReportStatus-CANCELLATION&A cancellation of an earlier SIGMET report
+
+			AeronauticalSignificantWeatherPhenomenon&Weather phenomenon of significance to aviation operations; used in SIGMET and AIRMET reports. The set of permitted options are defined in ICAO Annex 3 / WMO No. 49-2 C.3.1 sub-clause 1.1.4
+
+			
+			
+			
+			
+			
+			AerodromeCloudForecast&Forecast cloud conditions, including predicted vertical visibility and cloud layers.  
+
+A single vertical visibility may be reported, but cannot be reported with cloud layers.  
+AerodromeCloudForecast-verticalVisibility&The vertical visibility.  Vertical visibility is defined as the vertical visual range into an obscuring medium.
+
+			CloudLayer&A cloud layer, including a cloud amount, cloud base and cloud type
+CloudLayer-amount&The observed cloud amount
+CloudLayer-base&For a given cloud or cloud layer, height of the lowest level in the atmosphere at which the air contains a perceptible quantity of cloud particles.
+CloudLayer-cloudType&The observed significant cloud types: cumulonimbus or towering cumulus
+
+			CloudAmountReportedAtAerodrome&Amount of cloud - assessed by category:
+
+- Sky clear (0 oktas)
+- Few (1 - 2 oktas)
+- Scattered (3 - 4 oktas)
+- Broken (5 - 7 oktas)
+- Overcast (8 oktas)
+
+This ?CodeList? is specifically defined for aviation purposes, as defined in WMO No. 49-2. A superset of cloud-amount categories are defined in WMO No. 306 Vol I.2 FM 94 BUFR code-table 0 20 008 "Cloud distribution for aviation".
+
+			SigConvectiveCloudType&Genus of cloud of operational significance to aviation: significant convective clouds only.
+
+- Cumulonimbus
+- Towering cumulus
+
+This ?CodeList? is specifically defined for aviation purposes, as defined in WMO No. 49-2. A superset of definitions are defined in WMO No. 306 Vol I.2 FM 94 BUFR code-table 0 20 012 "Cloud type".
+
+			AerodromeSurfaceWindTrendForecast&A trend forecast of surface wind conditions at an aerodrome.
+AerodromeSurfaceWindTrendForecast-meanWindDirection&The forecast average wind direction from which wind is blowing
+AerodromeSurfaceWindTrendForecast-meanWindSpeed&The forecast average wind speed
+AerodromeSurfaceWindTrendForecast-windGustSpeed&The forecast maximum speed of a gust.
+
+			AerodromeSurfaceWindForecast&A forecast of wind conditions at an aerodrome.  
+
+This extends AerodromeSurfaceWindTrendForecast to allow for a variable wind direction to be reported.  This class differs from a aerodrome wind observation in that the observations may include a min/max directional variability.  This class only carries a true/false indication that it will be variable.
+AerodromeSurfaceWindForecast-variableWindDirection&Indicates variable wind direction.  Cannot be reported with a mean wind direction
+
+			AerodromeForecastWeather&AerodromeForecastWeather enables the forecast weather at an aerodrome to be reported.
+
+Only a specific set of weather phenomenon are reported within aviation meteorology as defined in Regulation ICAO Annex 3 / WMO No. 49-2.
+
+This ?CodeList? is specifically defined for aviation purposes as defined in WMO No. 49-2. A superset of definitions are defined in WMO No. 306 Vol I.1 code-table 4678 "Significant weather phenomena".
+
+			RelationalOperator&RelationalOperator defines the restricted set of operators that may be specified alongside numerical quantities in ICAO Annex 3/WMO No. 49.
+
+These operators are used in cases where a precise value is not measurable, not precisely known due to measurement limitations, or not reported due to reporting restrictions.
+
+For example, the "above" operator in conjunction with the reported quantity 10.6 indicates that the actual physical quantity is above 10.6 (at least 10.6).
+RelationalOperator-ABOVE&The actual value is above the maximum value that can be determined by the system ("ABV", "P")
+RelationalOperator-BELOW&The actual value is below the minimum value that can be determined by the system ("BLW", "M")
+
+MeteorologicalAerodromeObservation-result&
+
+			
+			MeteorologicalAerodromeObservation-featureOfInterest&
+
+			MeteorologicalAerodromeObservationRecord-surfaceWind&
+
+			MeteorologicalAerodromeObservationRecord-runwayState&When runways are affected by snow, slush, or other contaminants, a runway state report for each runway in use is required.
+
+There is no maximum number of runway states that can be reported.  This may be changed in a future amendment.
+
+			MeteorologicalAerodromeObservationRecord-recentWeather&
+
+			MeteorologicalAerodromeObservationRecord-presentWeather&When observed, between one and three present weather conditions
+
+When present weather cannot be observed by the automatic observing system due to a temporary failure of the system/sensor ("//") the present weather is missing with a nil reason of notObservable.
+
+			MeteorologicalAerodromeObservationRecord-rvr&RVR conditions are required if horizontal visibility or RVR is less than 1500 meters, up to a maximum of four runways
+
+			MeteorologicalAerodromeObservationRecord-windShear&
+
+			MeteorologicalAerodromeObservationRecord-visibility&
+
+			MeteorologicalAerodromeObservationRecord-seaState&
+
+			MeteorologicalAerodromeObservationRecord-cloud&When no clouds are detected by the automatic observing system, it should be indicated by a missing cloud group with a nil reason of notDetectedByAutoSystem ("NCD" from TAC).  
+
+When there are no clouds of operational significance and no restriction on vertical visibility and “CAVOK” is not appropriate ("NSC") it should be indicated by a missing cloud group with a nil reason of nothingOfOperationalSignificance
+
+
+
+			MeteorologicalAerodromeTrendForecast-result&
+
+			
+			MeteorologicalAerodromeTrendForecast-featureOfInterest&
+
+			
+			MeteorologicalAerodromeTrendForecastRecord-forecastWeather&Up to one forecast weather condition.
+
+The expected end of occurrence of weather phenomena ("NSW") is indicated by a change forecast with a missing weather group with a nil reason of nothingOfOperationalSignificance
+
+			MeteorologicalAerodromeTrendForecastRecord-surfaceWind&
+
+			MeteorologicalAerodromeTrendForecastRecord-cloud&When no clouds of operational significance are forecast and “CAVOK” is not appropriate ("NSC") it should be indicated by a missing cloud group with a nil reason of nothingOfOperationalSignificance
+
+			
+			
+			
+			
+			
+			AerodromeObservedClouds-layer&The observed cloud groups, up to four may be included.
+
+When cumulonimbus clouds or towering cumulus clouds are detected by the automatic observing system and the cloud amount and the height of cloud base cannot be observed ("//////") this is indicated by a missing cloud layer with a nil reason of either notObservable if the value could not be observed due to a sensor or system failure, or notDetectedByAutoSystem if the automated system is working properly but did not observe any values
+
+MeteorologicalAerodromeForecast-featureOfInterest&
+
+			MeteorologicalAerodromeForecast-result&
+
+			
+			MeteorologicalAerodromeForecastRecord-surfaceWind&
+
+			MeteorologicalAerodromeForecastRecord-cloud&Cloud phenomenon of operational significance, including cloud type and cloud layers.  To be included whenever applicable, so as to convey a complete description of the clouds of significance to flight operations.
+
+When no clouds of operational significance are forecast and “CAVOK” is not appropriate ("NSC") it should be indicated by a missing cloud group with a nil reason of nothingOfOperationalSignificance
+
+			MeteorologicalAerodromeForecastRecord-weather&Weather phenomenon: characteristics and type.  To be included whenever applicable.
+
+One or more, up to a maximum of three weather phenomena or combinations thereof, together with their characteristics and, where appropriate, intensity, are forecast if they are expected to occur at the aerodrome
+
+The expected end of occurrence of weather phenomena ("NSW") is indicated by a change forecast with a missing weather group with a nil reason of nothingOfOperationalSignificance
+
+			MeteorologicalAerodromeForecastRecord-temperature&Minimum and maximum temperatures observed at specific times, consisting of up to a maximum of four temperatures (two maximum temperatures and two minimum temperatures).
+
+Due to Note 9 on Table A5-1: "consisting of up to a maximum of four temperatures (two maximum temperatures and two minimum temperatures)", there can be up to two temperature groups on each MeteorologicalAerodromeForecastRecord.  It is possible that Annex 3 instead specifies four temperatures for the entire TAF but no more than one for each Record, in which case this association would need to be corrected to be 0..1 and a constraint on TAF would need to be put in place to ensure that no more than two temperature forecast groups exist on any single TAF.
+
+SIGMETEvolvingConditionAnalysis-featureOfInterest&
+
+			SIGMETEvolvingConditionAnalysis-result&
+
+			
+			
+			SIGMETPositionAnalysis-result&
+
+			SIGMETPositionAnalysis-featureOfInterest&
+
+			MeteorologicalPositionCollection-member&The members of this collection
+
+			
+			
+			
+			
+			
+			
+			AerodromeCloudForecast-layer&
+

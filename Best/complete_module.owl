@@ -1,0 +1,668 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="file:/Users/audunvennesland/Documents/PhD/Development/eclipse_workspace/Best/complete_module.owl#"
+     xml:base="file:/Users/audunvennesland/Documents/PhD/Development/eclipse_workspace/Best/complete_module.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AIRM="http://www.best-project.org/owl/AIRM#">
+    <owl:Ontology rdf:about="file:/Users/audunvennesland/Documents/PhD/Development/eclipse_workspace/Best/complete_module.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-aerodromeReferencePoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-aerodromeReferencePoint">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#SignificantPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-aerodromeSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-aerodromeSystem">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AerodromeSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-aerodromeTerrain -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-aerodromeTerrain">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AerodromeTerrain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-aircraftStandConfiguration -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-aircraftStandConfiguration">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftStandConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-airportSlot -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-airportSlot">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AirportSlot"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-altimeterSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-altimeterSource">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AltimeterSource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-atcBlindSpot -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-atcBlindSpot">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ATCBlindSpot"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-availability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-availability">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AerodromeAvailability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-certificationICAO -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-certificationICAO">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeICAOCertificationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-contact -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-contact">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ContactInformation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-contaminant -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-contaminant">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AerodromeContamination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-controlType -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-controlType">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeMilitaryOperationsType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-fieldElevation -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-fieldElevation">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValVerticalDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-fieldElevationAccuracy -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-fieldElevationAccuracy">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValVerticalDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-flightconditionelement -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-flightconditionelement">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#FlightConditionElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-flightroutingelement -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-flightroutingelement">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#FlightRoutingElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-geotemporalenabledentity -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-geotemporalenabledentity">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#GeoTemporalEnabledEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-groundService -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-groundService">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AirportGroundService"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-iataCoordinationLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-iataCoordinationLevel">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeIATACoordinationLevelType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-iatauniqueflightidentifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-iatauniqueflightidentifier">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#IATAUniqueFlightIdentifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-lowestTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-lowestTemperature">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-nas -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-nas">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Airspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-obstaclearea -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-obstaclearea">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ObstacleArea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-referenceTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-referenceTemperature">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-responsibleOrganisation -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-responsibleOrganisation">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Organisation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-runwayConfiguration -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-runwayConfiguration">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#RunwayConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-servedCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-servedCity">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-significantPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-significantPoint">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#SignificantPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-taxiwayConfiguration -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-taxiwayConfiguration">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#TaxiwayConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-terminal -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-terminal">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Terminal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-tma -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-tma">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Airspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-transitionAltitude -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-transitionAltitude">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValVerticalDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-type -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-type">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAerodromeType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-unit -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-unit">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-verticalDatum -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-verticalDatum">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeVerticalDatumType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-certificationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-certificationDate">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-certificationExpirationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-certificationExpirationDate">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-country">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-dateMagneticVariation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-dateMagneticVariation">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-designator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-designator">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-designatorIATA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-designatorIATA">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-locationIndicatorICAO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-locationIndicatorICAO">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-magneticVariation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-magneticVariation">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-magneticVariationAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-magneticVariationAccuracy">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-magneticVariationChange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-magneticVariationChange">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-name">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome-transitionLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome-transitionLevel">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ATCBlindSpot -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ATCBlindSpot"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeAvailability -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AerodromeAvailability"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeContamination -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AerodromeContamination"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeSystem -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AerodromeSystem"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeTerrain -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AerodromeTerrain"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftStandConfiguration -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftStandConfiguration"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AirportGroundService -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AirportGroundService"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AirportSlot -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AirportSlot"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Airspace -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Airspace"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AltimeterSource -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AltimeterSource"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#City -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#City"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAerodromeType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAerodromeType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeIATACoordinationLevelType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeIATACoordinationLevelType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeICAOCertificationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeICAOCertificationType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeMilitaryOperationsType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeMilitaryOperationsType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeVerticalDatumType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeVerticalDatumType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ContactInformation -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ContactInformation"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConditionElement -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightConditionElement"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightRoutingElement -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightRoutingElement"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#GeoTemporalEnabledEntity -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#GeoTemporalEnabledEntity"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#IATAUniqueFlightIdentifier -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#IATAUniqueFlightIdentifier"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ObstacleArea -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ObstacleArea"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Organisation -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Organisation"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayConfiguration -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#RunwayConfiguration"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SignificantPoint -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#SignificantPoint"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TaxiwayConfiguration -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#TaxiwayConfiguration"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Terminal -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Terminal"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Unit -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Unit"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValTemperatureType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValVerticalDistanceType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValVerticalDistanceType"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+

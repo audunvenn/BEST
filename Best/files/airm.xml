@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xmi>
+<extension>
+<elements>
+<element name="Aircraft">
+<extendedProperties packageName="SubjectFields"/>
+</element>
+<element name="Engine">
+<extendedProperties packageName="Aircraft"/>
+</element>
+<element name="Runway">
+<extendedProperties packageName="AerodromeInfrastructure"/>
+</element>
+<element name="Aerodrome">
+<extendedProperties packageName="AerodromeInfrastructure"/>
+</element>
+</elements>
+</extension>
+<documentation>
+</documentation>
+</xmi>

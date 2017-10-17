@@ -1,0 +1,3747 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="file:/Users/audunvennesland/Documents/PhD/Development/eclipse_workspace/Best/AIRM_Aircraft.owl#"
+     xml:base="file:/Users/audunvennesland/Documents/PhD/Development/eclipse_workspace/Best/AIRM_Aircraft.owl"
+     xmlns:CodeSurveillanceCapabilityType-ADS-C_FANS_1="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-C_FANS_1/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CodeDatalinkCommunicationCapabilityType-FANS_1A="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-FANS_1A/"
+     xmlns:AIRM="http://www.best-project.org/owl/AIRM#"
+     xmlns:CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/">
+    <owl:Ontology rdf:about="file:/Users/audunvennesland/Documents/PhD/Development/eclipse_workspace/Best/AIRM_Aircraft.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AeroplaneConfiguration-trajectoryPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration-trajectoryPoint">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#TrajectoryPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-aircraftCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-aircraftCapability">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-aircraftEquipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-aircraftEquipment">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-aircraftModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-aircraftModel">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-aircraftType -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-aircraftType">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-category -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-category">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-configuration -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-configuration">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-currentDataLinkAuthority -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-currentDataLinkAuthority">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-dimensions -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-dimensions">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftDimensions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-icaoAircraftAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-icaoAircraftAddress">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ICAOAircraftAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-icaoAircraftCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-icaoAircraftCategory">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-manufacturer -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-manufacturer">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AerospaceManufacturer"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-nextTraversedDataLinkAuthority -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-nextTraversedDataLinkAuthority">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-passengersInterpretation -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-passengersInterpretation">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeValueInterpretationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-registeringAuthority -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-registeringAuthority">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Organisation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftAvionics-type -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftAvionics-type">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftAvionics"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-aircraftCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-aircraftCapability">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Capability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-altitudeReportingCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-altitudeReportingCapability">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-datalinkCommunicationCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-datalinkCommunicationCapability">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-deliveredPerformance -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-deliveredPerformance">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftPerformance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-dryLandingDistance -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-dryLandingDistance">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-envelope -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-envelope">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#FlightEnvelope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-equipmentCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-equipmentCapability">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#EquipmentCapability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-exemptingOrganisation -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-exemptingOrganisation">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Organisation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-flightPerformance -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-flightPerformance">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#FlightPerformance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-surveillanceCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-surveillanceCapability">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-targetTrajectoryChangeReportCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-targetTrajectoryChangeReportCapability">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability-wetLandingDistance -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability-wetLandingDistance">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCategory-aircraftLandingCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCategory-aircraftLandingCategory">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCategory"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCategory-helicopterClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCategory-helicopterClass">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCategory"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCategory-wakeTurbulenceCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCategory-wakeTurbulenceCategory">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCategory"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCategory-wakeVortexClassification -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftCategory-wakeVortexClassification">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCategory"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftConfiguration-aircraftCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftConfiguration-aircraftCapability">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftCapability"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftConfiguration-configurationItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftConfiguration-configurationItem">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftConfiguration"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftConfiguration-deliveredPerformance -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftConfiguration-deliveredPerformance">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftConfiguration"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftPerformance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftConfiguration-noiseCertification -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftConfiguration-noiseCertification">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftConfiguration"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftDimensions-classWingSpan -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftDimensions-classWingSpan">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftDimensions"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftDimensions-clearanceMinimaWithBuilding -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftDimensions-clearanceMinimaWithBuilding">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftDimensions"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftDimensions-outerMainGearWheelSpan -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftDimensions-outerMainGearWheelSpan">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftDimensions"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftDimensions-wingSpan -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftDimensions-wingSpan">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftDimensions"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftDimensions-wingSpanInterpretation -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftDimensions-wingSpanInterpretation">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftDimensions"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeValueInterpretationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftEquipment-isEquipped -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftEquipment-isEquipped">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftEquipment-isOperational -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftEquipment-isOperational">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeEquipmentOperationalType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftEquipment-manufacturer -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftEquipment-manufacturer">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AerospaceManufacturer"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftEquipment-type -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftEquipment-type">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEquipmentType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftPerformance-airSpeed -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftPerformance-airSpeed">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftPerformance"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftPerformance-gaseousEmission -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftPerformance-gaseousEmission">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftPerformance"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#MatterEmission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftPerformance-maximumCeiling -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftPerformance-maximumCeiling">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftPerformance"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValAltitudeType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftPerformance-status -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftPerformance-status">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftPerformance"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftPerformanceStatusType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftType-aircraftstand -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftType-aircraftstand">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftStand"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftType-classification -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftType-classification">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftType"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftType-runwaydirection -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftType-runwaydirection">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftType"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#RunwayDirection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftType-taxiwayelement -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftType-taxiwayelement">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftType"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#TaxiwayElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AirframeEquipment-type -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AirframeEquipment-type">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AirframeEquipment"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AuxiliaryPowerUnit-auxiliaryPowerUnitGaseousEmission -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AuxiliaryPowerUnit-auxiliaryPowerUnitGaseousEmission">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AuxiliaryPowerUnit"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#MatterEmission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Capability-aircraftCapabilityType -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Capability-aircraftCapabilityType">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Capability"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Engine-type -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Engine-type">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Engine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EngineRegime-engineMode -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#EngineRegime-engineMode">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeFlightPhaseType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#EngineRegime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EquipmentCapability-acasCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#EquipmentCapability-acasCapability">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeACASCapabilityType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#EquipmentCapability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EquipmentCapability-classB2TransmitPowerCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#EquipmentCapability-classB2TransmitPowerCapability">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeClassB2TransmitPowerCapabilityType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#EquipmentCapability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-aircraftMass -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-aircraftMass">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValMassType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-barometricPressureSetting -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-barometricPressureSetting">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValPressureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-engineRegime -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-engineRegime">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#EngineRegime"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightEnvelope-minApproachSpeed -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightEnvelope-minApproachSpeed">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightEnvelope"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightEnvelope-minManoeuvreSpeed -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightEnvelope-minManoeuvreSpeed">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightEnvelope"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightEnvelope-operationalSpeedRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightEnvelope-operationalSpeedRange">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightEnvelope"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#SpeedRangeType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightPerformance-climbProfile -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightPerformance-climbProfile">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightPerformance"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Trajectory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightPerformance-descentProfile -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightPerformance-descentProfile">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightPerformance"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Trajectory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ManufacturerConfiguration-manufacturer -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#ManufacturerConfiguration-manufacturer">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AerospaceManufacturer"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ManufacturerConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ManufacturerConfiguration-maximumTakeOffWeight -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#ManufacturerConfiguration-maximumTakeOffWeight">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ManufacturerConfiguration"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValMassType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ManufacturerConfiguration-numberOfEngines -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#ManufacturerConfiguration-numberOfEngines">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ManufacturerConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#OperatorConfiguration-colourAndMarking -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#OperatorConfiguration-colourAndMarking">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftColourAndMarking"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#OperatorConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#OperatorConfiguration-configurationOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#OperatorConfiguration-configurationOwner">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftOperator"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#OperatorConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#OperatorConfiguration-constraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#OperatorConfiguration-constraint">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ManufacturerConfiguration"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#OperatorConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SurvivalEquipment-lifeJacketType -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#SurvivalEquipment-lifeJacketType">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#SurvivalEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SurvivalEquipment-survivalEquipmentType -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#SurvivalEquipment-survivalEquipmentType">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#SurvivalEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SurvivalEquipment-type -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#SurvivalEquipment-type">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftSurvivalEquipmentType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#SurvivalEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration-cargoWeight -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration-cargoWeight">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TakeOffConfiguration"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValMassType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration-constraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration-constraint">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#OperatorConfiguration"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TakeOffConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration-crewMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration-crewMember">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CrewMember"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TakeOffConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration-flight -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration-flight">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Flight"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TakeOffConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration-takeOffWeight -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration-takeOffWeight">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TakeOffConfiguration"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValMassType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Vehicle-state -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Vehicle-state">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AircraftState"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Vehicle-surfaceVehicleType -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Vehicle-surfaceVehicleType">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AeroplaneConfiguration-flaps -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration-flaps">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AeroplaneConfiguration-slats -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration-slats">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-aircraftRegistration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-aircraftRegistration">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-militaryAircraftCallsign -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-militaryAircraftCallsign">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft-selectiveCallingCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Aircraft-selectiveCallingCode">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftColourAndMarking-aircraftColour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftColourAndMarking-aircraftColour">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftColourAndMarking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftColourAndMarking-significantMarkings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftColourAndMarking-significantMarkings">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftColourAndMarking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries-make -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries-make">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries-model -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries-model">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries-series -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries-series">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftType-iataIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftType-iataIdentifier">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftType-icaoIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftType-icaoIdentifier">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftType-operationalName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AircraftType-operationalName">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AircraftType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AuxiliaryPowerUnit-fuelBurnCharacteristics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AuxiliaryPowerUnit-fuelBurnCharacteristics">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AuxiliaryPowerUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Engine-maximumRatedThrust -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Engine-maximumRatedThrust">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Engine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EngineRegime-correctedNetThrust -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#EngineRegime-correctedNetThrust">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#EngineRegime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EngineRegime-enginePressureRatio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#EngineRegime-enginePressureRatio">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#EngineRegime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EngineRegime-percentN1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#EngineRegime-percentN1">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#EngineRegime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EngineRegime-percentOfMaxRatedThrust -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#EngineRegime-percentOfMaxRatedThrust">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#EngineRegime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EquipmentCapability-terrainAwarenessAndGroundProximityAlertingCapability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#EquipmentCapability-terrainAwarenessAndGroundProximityAlertingCapability">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#EquipmentCapability"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-auxiliaryPowerUnitFuelFlow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-auxiliaryPowerUnitFuelFlow">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-mainEnginesFuelFlow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-mainEnginesFuelFlow">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightEnvelope-maxCruiseLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#FlightEnvelope-maxCruiseLevel">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#FlightEnvelope"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ICAOAircraftAddress-codeBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#ICAOAircraftAddress-codeBlock">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ICAOAircraftAddress"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ICAOAircraftAddress-headerBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#ICAOAircraftAddress-headerBlock">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ICAOAircraftAddress"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ManufacturerConfiguration-maximumNumberOfPassengers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#ManufacturerConfiguration-maximumNumberOfPassengers">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ManufacturerConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#OperatorConfiguration-numberOfSeats -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#OperatorConfiguration-numberOfSeats">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#OperatorConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SurvivalEquipment-colour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#SurvivalEquipment-colour">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#SurvivalEquipment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SurvivalEquipment-dinghyTotalCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#SurvivalEquipment-dinghyTotalCapacity">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#SurvivalEquipment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SurvivalEquipment-number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#SurvivalEquipment-number">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#SurvivalEquipment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration-numberOfPassengers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration-numberOfPassengers">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TakeOffConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration-numberOfPersons -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration-numberOfPersons">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TakeOffConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration-numberOfTrafficUnits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration-numberOfTrafficUnits">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TakeOffConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AeroplaneConfiguration -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AircraftConfiguration"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AeroplaneConfiguration-areAirBrakesDeployed -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration-areAirBrakesDeployed">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration"/>
+        <rdfs:comment>The specific setting of the airbrakes of an aircraft. TRUE means deployed, FALSE means retracted.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AeroplaneConfiguration-isLandingGearDeployed -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration-isLandingGearDeployed">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AeroplaneConfiguration"/>
+        <rdfs:comment>The specific setting of the landingGear of an aircraft. TRUE means deployed, FALSE means retracted.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerospaceManufacturer -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AerospaceManufacturer"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aircraft -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftAvionics -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftAvionics">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCapability -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftCapability">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftCategory -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftCategory">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftColourAndMarking -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftColourAndMarking">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftConfiguration -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftDimensions -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftDimensions">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftEquipment -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftMakeModelSeries">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftOperator -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftOperator"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftPerformance -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftPerformance">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftStand -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftStand"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftState -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftState"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AircraftType-isCargo -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AircraftType-isCargo">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AircraftType"/>
+        <rdfs:comment>Indication if it concerns a cargo aircraft type.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AirframeEquipment -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AirframeEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AuxiliaryPowerUnit -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AuxiliaryPowerUnit">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Capability -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Capability">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Capability-isCapable -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Capability-isCapable">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#Capability"/>
+        <rdfs:comment>Indication whether the aircraft has this type of capability.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeACASCapabilityType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeACASCapabilityType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEquipmentType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEquipmentType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftPerformanceStatusType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftPerformanceStatusType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftSurvivalEquipmentType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftSurvivalEquipmentType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeClassB2TransmitPowerCapabilityType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeClassB2TransmitPowerCapabilityType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeEquipmentOperationalType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeEquipmentOperationalType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeFlightPhaseType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeFlightPhaseType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTransponderType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeTransponderType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeValueInterpretationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeValueInterpretationType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CrewMember -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CrewMember"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Engine -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Engine">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EngineRegime -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#EngineRegime">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EquipmentCapability -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#EquipmentCapability">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#EquipmentCapability-isCapable -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#EquipmentCapability-isCapable">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#EquipmentCapability"/>
+        <rdfs:comment>Indication whether the aircraft equipment has this type of capability.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Flight -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Flight"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AircraftConfiguration"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-isIDENTSwitchActive -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-isIDENTSwitchActive">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:comment>Indication that the “IDENT”-switch is active.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-isPositionOffsetApplied -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-isPositionOffsetApplied">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:comment>Position Offset Applied
+= 0	Position transmitted is not ADS-B position reference point
+= 1	Position transmitted is the ADS-B position reference point</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-isReceivingATCServices -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-isReceivingATCServices">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:comment>Indication whether the aircraft is receiving ATC Services.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-isSingleAntenna -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-isSingleAntenna">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:comment>Single Antenna
+= 0	Antenna Diversity
+= 1 	Single Antenna only</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-isSpecificServiceCapability -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-isSpecificServiceCapability">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:comment>Indication whether specific BDS-registers are used, without additional specifications.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightConfiguration-isTCASResolutionAdvisoryActive -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightConfiguration-isTCASResolutionAdvisoryActive">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:comment>Flag indicating if TCAS Resolution Advisory is active
+=0	TCAS II or ACAS RA not active
+=1	TCAS RA active</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightEnvelope -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightEnvelope">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#FlightPerformance -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#FlightPerformance">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ICAOAircraftAddress -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ICAOAircraftAddress">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ManufacturerConfiguration -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ManufacturerConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AircraftConfiguration"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#MatterEmission -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#MatterEmission"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#OperatorConfiguration -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#OperatorConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AircraftConfiguration"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Organisation -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Organisation"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayDirection -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#RunwayDirection"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SpeedRangeType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#SpeedRangeType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SurvivalEquipment -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#SurvivalEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AircraftEquipment"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SurvivalEquipment-isCovered -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#SurvivalEquipment-isCovered">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#SurvivalEquipment"/>
+        <rdfs:comment>Whether the equipment is covered.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#FlightConfiguration"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration-isCargo -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration-isCargo">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#TakeOffConfiguration"/>
+        <rdfs:comment>Whether the aircraft has cargo onboard at take-off.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TakeOffConfiguration-isPassenger -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#TakeOffConfiguration-isPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#TakeOffConfiguration"/>
+        <rdfs:comment>Whether the aircraft has passengers onboard at take-off.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TaxiwayElement -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#TaxiwayElement"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Trajectory -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Trajectory"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TrajectoryPoint -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#TrajectoryPoint"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Unit -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Unit"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValAltitudeType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValAltitudeType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValDistanceType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValMassType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValMassType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValPressureType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValPressureType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValSpeedType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Vehicle -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#_Aircraft_ -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_ -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#_Codelists_Aircraft_">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Aircraft_"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeACASCapabilityType-AIRCRAFT_IDENTIFICATION_CAPABILITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeACASCapabilityType-AIRCRAFT_IDENTIFICATION_CAPABILITY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeACASCapabilityType"/>
+        <rdfs:label>AIRCRAFT_IDENTIFICATION_CAPABILITY</rdfs:label>
+        <rdfs:comment>Capability of the airborne collision avoidance system to identify aircraft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeACASCapabilityType-B1A -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeACASCapabilityType-B1A">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeACASCapabilityType"/>
+        <rdfs:label>B1A</rdfs:label>
+        <rdfs:comment>BDS (binary data source) 1,0 bit 16
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeACASCapabilityType-B1B -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeACASCapabilityType-B1B">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeACASCapabilityType"/>
+        <rdfs:label>B1B</rdfs:label>
+        <rdfs:comment>BDS (binary data source) 1,0 bits 37/40
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType-AIRFRAME -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType-AIRFRAME">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType"/>
+        <rdfs:label>AIRFRAME</rdfs:label>
+        <rdfs:comment>The body of an aircraft as distinct from its engine.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType-AIR_BRAKE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType-AIR_BRAKE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType"/>
+        <rdfs:label>AIR_BRAKE</rdfs:label>
+        <rdfs:comment>A movable flap or other device on an aircraft to reduce its speed.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType-HIGH_LIFT_DEVICE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType-HIGH_LIFT_DEVICE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType"/>
+        <rdfs:label>HIGH_LIFT_DEVICE</rdfs:label>
+        <rdfs:comment>Movable surfaces or, in some cases, stationary components that are designed to increase lift during some phases or conditions of flight.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType-LANDING_GEAR -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType-LANDING_GEAR">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAirframeEquipmentType"/>
+        <rdfs:label>LANDING_GEAR</rdfs:label>
+        <rdfs:comment>The undercarriage of an aircraft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-AIRBORNE_COLLISION_AVOIDANCE_SYSTEM_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-AIRBORNE_COLLISION_AVOIDANCE_SYSTEM_I">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>AIRBORNE_COLLISION_AVOIDANCE_SYSTEM_I</rdfs:label>
+        <rdfs:comment>An ACAS which provides information as an aid to &quot;see and avoid&quot; action but does not include the capability for generating resolution advisories (RAs).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-AIRBORNE_COLLISION_AVOIDANCE_SYSTEM_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-AIRBORNE_COLLISION_AVOIDANCE_SYSTEM_II">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>AIRBORNE_COLLISION_AVOIDANCE_SYSTEM_II</rdfs:label>
+        <rdfs:comment>An ACAS which provides vertical resolution advisories (RAs) in addition to traffic advisories (TAs).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-AIRBORNE_SEPARATION_ASSURANCE_SYSTEM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-AIRBORNE_SEPARATION_ASSURANCE_SYSTEM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>AIRBORNE_SEPARATION_ASSURANCE_SYSTEM</rdfs:label>
+        <rdfs:comment>An aircraft system that enables the flight crew to maintain separation of their aircraft from one or more aircraft, and provides flight information concerning surrounding traffic. </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-AUTOMATIC_DIRECTION_FINDER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-AUTOMATIC_DIRECTION_FINDER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>AUTOMATIC_DIRECTION_FINDER</rdfs:label>
+        <rdfs:comment>An electronic aid to navigation that identifies the relative bearing of an aircraft from a radio beacon transmitting in the MF or LF bandwidth, such as an NDB or commercial radio broadcast station. </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-COCKPIT_DISPLAY_OF_SURFACE_TRAFFIC_INFORMATION -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-COCKPIT_DISPLAY_OF_SURFACE_TRAFFIC_INFORMATION">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>COCKPIT_DISPLAY_OF_SURFACE_TRAFFIC_INFORMATION</rdfs:label>
+        <rdfs:comment>A generic avionics device on the flight deck that is capable of displaying the position information of nearby aircraft on the ground.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-COCKPIT_DISPLAY_OF_TRAFFIC_INFORMATION -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-COCKPIT_DISPLAY_OF_TRAFFIC_INFORMATION">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>COCKPIT_DISPLAY_OF_TRAFFIC_INFORMATION</rdfs:label>
+        <rdfs:comment>A generic avionics device on the flight deck that is capable of displaying the position information of nearby aircraft. It may also include ground reference points and navigation information to increase the AIRSAW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-ENHANCED_VISION_SYSTEM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-ENHANCED_VISION_SYSTEM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>ENHANCED_VISION_SYSTEM</rdfs:label>
+        <rdfs:comment>Aircraft equipment incorporating information from aircraft based sensors to provide vision in limited visibility environments.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-GROUND_PROXIMITY_WARNING_SYSTEM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-GROUND_PROXIMITY_WARNING_SYSTEM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>GROUND_PROXIMITY_WARNING_SYSTEM</rdfs:label>
+        <rdfs:comment>A system which provides automatically a timely and distinctive warning to the flight crew when the aeroplane is in potentially hazardous proximity to the earth&#39;s surface.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-INERTIAL_NAVIGATION_SYSTEM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-INERTIAL_NAVIGATION_SYSTEM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>INERTIAL_NAVIGATION_SYSTEM</rdfs:label>
+        <rdfs:comment>An aircraft avionics equipment providing the position and altitude of the aircraft by measuring the accelerations and rotations applied to the system&#39;s inertial frame.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-SURFACE_MOVING_MAP_DISPLAY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-SURFACE_MOVING_MAP_DISPLAY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>SURFACE_MOVING_MAP_DISPLAY</rdfs:label>
+        <rdfs:comment>Aircraft equipment depicting a moving map for an airport.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-SYNTHETIC_VISION_SYSTEM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-SYNTHETIC_VISION_SYSTEM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>SYNTHETIC_VISION_SYSTEM</rdfs:label>
+        <rdfs:comment>Aircraft equipment fusing three-dimensional data into intuitive displays that provide situational awareness to flight crews.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-TERRAIN_AVOIDANCE_AND_WARNING_SYSTEM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-TERRAIN_AVOIDANCE_AND_WARNING_SYSTEM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>TERRAIN_AVOIDANCE_AND_WARNING_SYSTEM</rdfs:label>
+        <rdfs:comment>A specific implementation of GPWS.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-TRAFFIC_ALERT_AND_COLLISION_AVOIDANCE_SYSTEM_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-TRAFFIC_ALERT_AND_COLLISION_AVOIDANCE_SYSTEM_I">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>TRAFFIC_ALERT_AND_COLLISION_AVOIDANCE_SYSTEM_I</rdfs:label>
+        <rdfs:comment>A specific implementation of ACAS I.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-TRAFFIC_ALERT_AND_COLLISION_AVOIDANCE_SYSTEM_II_VERSION_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType-TRAFFIC_ALERT_AND_COLLISION_AVOIDANCE_SYSTEM_II_VERSION_7">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftAvionicsEquipmentType"/>
+        <rdfs:label>TRAFFIC_ALERT_AND_COLLISION_AVOIDANCE_SYSTEM_II_VERSION_7</rdfs:label>
+        <rdfs:comment>A specific implementation of the ACAS II concept.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType-AIR_REFERENCED_VELOCITY_REPORT_GENERATION_CAPABILITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType-AIR_REFERENCED_VELOCITY_REPORT_GENERATION_CAPABILITY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType"/>
+        <rdfs:label>AIR_REFERENCED_VELOCITY_REPORT_GENERATION_CAPABILITY</rdfs:label>
+        <rdfs:comment>The capability of aircraft to generate Air-Referenced Velocity Reports.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType-LOW_VISIBILITY_OPERATIONS_CAPABILITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType-LOW_VISIBILITY_OPERATIONS_CAPABILITY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType"/>
+        <rdfs:label>LOW_VISIBILITY_OPERATIONS_CAPABILITY</rdfs:label>
+        <rdfs:comment>The capability of aircraft to enable low visibility operations.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType-RVSM_CAPABILITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType-RVSM_CAPABILITY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType"/>
+        <rdfs:label>RVSM_CAPABILITY</rdfs:label>
+        <rdfs:comment>The capability of aircraft to enable Reduced Vertical Separation Minimum operations.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType-SURFACE_MOVING_MAP_WITH_OWNERSHIP_POSITION_CAPABILITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType-SURFACE_MOVING_MAP_WITH_OWNERSHIP_POSITION_CAPABILITY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType"/>
+        <rdfs:label>SURFACE_MOVING_MAP_WITH_OWNERSHIP_POSITION_CAPABILITY</rdfs:label>
+        <rdfs:comment>The capability of aircraft to display its position on the airport surface to the pilots.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType-TARGET_STATE_REPORT_CAPABILITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType-TARGET_STATE_REPORT_CAPABILITY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftCapabilityType"/>
+        <rdfs:label>TARGET_STATE_REPORT_CAPABILITY</rdfs:label>
+        <rdfs:comment>The capability of aircraft to generate target state reports.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-CLEARANCE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-CLEARANCE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType"/>
+        <rdfs:label>CLEARANCE</rdfs:label>
+        <rdfs:comment>The minimum clearance with building can be used as classification criteria by defining ranges of values.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-ENGINE_NUMBER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-ENGINE_NUMBER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType"/>
+        <rdfs:label>ENGINE_NUMBER</rdfs:label>
+        <rdfs:comment>The engine number can be used as classification criteria by defining ranges of values.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-ENGINE_TYPE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-ENGINE_TYPE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType"/>
+        <rdfs:label>ENGINE_TYPE</rdfs:label>
+        <rdfs:comment>The engine type can be used as classification criteria by defining lists of values.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-MINIMUM_APPROACH_SPEED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-MINIMUM_APPROACH_SPEED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType"/>
+        <rdfs:label>MINIMUM_APPROACH_SPEED</rdfs:label>
+        <rdfs:comment>The minimum approach speed can be used as classification criteria by defining ranges of values.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-MTOW -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-MTOW">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType"/>
+        <rdfs:label>MTOW</rdfs:label>
+        <rdfs:comment>The maximum take-off weight can be used as classification criteria by defining ranges of values.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-OUTER_GEAR_SPAN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-OUTER_GEAR_SPAN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType"/>
+        <rdfs:label>OUTER_GEAR_SPAN</rdfs:label>
+        <rdfs:comment>The outer main gear wheel span can be used as classification criteria by defining ranges of values.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-WING_SPAN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType-WING_SPAN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftClassificationType"/>
+        <rdfs:label>WING_SPAN</rdfs:label>
+        <rdfs:comment>The maximum wing span can be used as classification criteria by defining ranges of values.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-0">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType"/>
+        <rdfs:label>0</rdfs:label>
+        <rdfs:comment>No engines (gliders, balloons,...)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-1">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType"/>
+        <rdfs:label>1</rdfs:label>
+        <rdfs:comment>One engine.
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-2">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType"/>
+        <rdfs:label>2</rdfs:label>
+        <rdfs:comment>Two engines.
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-2C -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-2C">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType"/>
+        <rdfs:label>2C</rdfs:label>
+        <rdfs:comment>Two coupled engines driving one propeller.
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-3">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType"/>
+        <rdfs:label>3</rdfs:label>
+        <rdfs:comment>Three engines.
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-4">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType"/>
+        <rdfs:label>4</rdfs:label>
+        <rdfs:comment>Four engines.
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-6">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType"/>
+        <rdfs:label>6</rdfs:label>
+        <rdfs:comment>Six engines.
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType-8">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineNumberType"/>
+        <rdfs:label>8</rdfs:label>
+        <rdfs:comment>Eight engines.
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineType-ELECTRIC -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType-ELECTRIC">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType"/>
+        <rdfs:label>ELECTRIC</rdfs:label>
+        <rdfs:comment>Electric engine</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineType-PISTON -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType-PISTON">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType"/>
+        <rdfs:label>PISTON</rdfs:label>
+        <rdfs:comment>Piston engine.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineType-TURBO_FAN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType-TURBO_FAN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType"/>
+        <rdfs:label>TURBO_FAN</rdfs:label>
+        <rdfs:comment>Turbofan engine.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineType-TURBO_JET -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType-TURBO_JET">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType"/>
+        <rdfs:label>TURBO_JET</rdfs:label>
+        <rdfs:comment>Turbojet engine.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEngineType-TURBO_PROP -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType-TURBO_PROP">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEngineType"/>
+        <rdfs:label>TURBO_PROP</rdfs:label>
+        <rdfs:comment>Turbo-prop engine.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftEquipmentType-EMERGENCY_LOCATOR_TRANSMITTER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftEquipmentType-EMERGENCY_LOCATOR_TRANSMITTER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftEquipmentType"/>
+        <rdfs:label>EMERGENCY_LOCATOR_TRANSMITTER</rdfs:label>
+        <rdfs:comment>A generic term describing equipment which broadcast distinctive signals on designated frequencies and, depending on application, may be automatically activated by impact or be manually activated. An ELT may be any of the following:
+Automatic fixed ELT (ELT(AF)). An automatically activated ELT which is permanently attached to an aircraft.
+Automatic portable ELT (ELT(AP)). An automatically activated ELT which is rigidly attached to an aircraft but readily removable from the aircraft.
+Automatic deployable ELT (ELT(AD)). An ELT which is rigidly attached to an aircraft and which is automatically deployed and activated by impact, and, in some cases, also by hydrostatic sensors. Manual deployment is also provided.
+Survival ELT (ELT(S)). An ELT which is removable from an aircraft, stowed so as to facilitate its ready use in an emergency, and manually activated by survivors.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-A -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-A">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType"/>
+        <rdfs:label>A</rdfs:label>
+        <rdfs:comment>Category A: - less than 169 km/h (91 kt) indicated air speed</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-ALL -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-ALL">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType"/>
+        <rdfs:label>ALL</rdfs:label>
+        <rdfs:comment>All aircraft and helicopter categories.
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-B -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-B">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType"/>
+        <rdfs:label>B</rdfs:label>
+        <rdfs:comment>Category B: - 169 km/h (91 kt) or more but less than 224 km/h (121 kt) indicated air speed</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-C -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-C">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType"/>
+        <rdfs:label>C</rdfs:label>
+        <rdfs:comment>Category C: - 224 km/h (121 kt) or more but less than 261 km/h (141 kt) indicated air speed</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-D -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-D">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType"/>
+        <rdfs:label>D</rdfs:label>
+        <rdfs:comment>Category D: - 261 km/h (141 kt) or more but less than 307 km/h (166 kt) indicated air speed</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-E -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-E">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType"/>
+        <rdfs:label>E</rdfs:label>
+        <rdfs:comment>Category E: - 307 km/h (166 kt) or more but less than 391 km/h (211 kt) indicated air speed</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-H -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType-H">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftLandingCategoryType"/>
+        <rdfs:label>H</rdfs:label>
+        <rdfs:comment>Category H: - helicopter (the stall speed method of calculating aircraft category does not apply)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftPerformanceStatusType-DECLARED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftPerformanceStatusType-DECLARED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftPerformanceStatusType"/>
+        <rdfs:label>DECLARED</rdfs:label>
+        <rdfs:comment>The declared performance.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftPerformanceStatusType-REPORTED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftPerformanceStatusType-REPORTED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftPerformanceStatusType"/>
+        <rdfs:label>REPORTED</rdfs:label>
+        <rdfs:comment>The reported performance.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftSurvivalEquipmentType-DINGHY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftSurvivalEquipmentType-DINGHY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftSurvivalEquipmentType"/>
+        <rdfs:label>DINGHY</rdfs:label>
+        <rdfs:comment>A small inflatable rubber boat.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftSurvivalEquipmentType-LIFE_JACKET -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftSurvivalEquipmentType-LIFE_JACKET">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftSurvivalEquipmentType"/>
+        <rdfs:label>LIFE_JACKET</rdfs:label>
+        <rdfs:comment>A sleeveless buoyant or inflatable jacket for keeping a person afloat in water.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-AEROPLANE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-AEROPLANE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>AEROPLANE</rdfs:label>
+        <rdfs:comment>A power-driven heavier-than-air aircraft, deriving its lift in flight chiefly from aerodynamic reactions on surfaces which remain fixed under given conditions of flight.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-AIRSHIP -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-AIRSHIP">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>AIRSHIP</rdfs:label>
+        <rdfs:comment>A power-driven lighter-than-air aircraft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-BALLOON -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-BALLOON">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>BALLOON</rdfs:label>
+        <rdfs:comment>A non-power-driven lighter-than-air aircraft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-GLIDER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-GLIDER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>GLIDER</rdfs:label>
+        <rdfs:comment>A non-power-driven heavier-than-air aircraft, deriving its lift in flight chiefly from aerodynamic reactions on surfaces which remain fixed under given conditions of flight.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-GYROPLANE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-GYROPLANE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>GYROPLANE</rdfs:label>
+        <rdfs:comment>A heavier-than-air aircraft supported in flight by the reactions of the air on one or more rotors which rotate freely on substantially vertical axes.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-HELICOPTER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-HELICOPTER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>HELICOPTER</rdfs:label>
+        <rdfs:comment>A heavier-than-air aircraft supported in flight chiefly by the reactions of the air on one or more power-driven rotors on substantially vertical axes.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-ORNITHOPTER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-ORNITHOPTER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>ORNITHOPTER</rdfs:label>
+        <rdfs:comment>A heavier-than-air aircraft supported in flight chiefly by the reactions of the air on planes to which a flapping motion is imparted.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-POWERED_LIFT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-POWERED_LIFT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>POWERED_LIFT</rdfs:label>
+        <rdfs:comment>A heavier-than-air aircraft capable of vertical take-off, vertical landing, and low-speed flight, which depends principally on engine-driven lift devices or engine thrust for the lift during these flight regimes and on non-rotating aerofoil(s) for lift during horizontal flight.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-ROTORCRAFT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-ROTORCRAFT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>ROTORCRAFT</rdfs:label>
+        <rdfs:comment>A power-driven heavier-than-air aircraft supported in flight by the reactions of the air on one or more rotors.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-SELF_SUSTAINING_POWERED_SAILPLANE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-SELF_SUSTAINING_POWERED_SAILPLANE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>SELF_SUSTAINING_POWERED_SAILPLANE</rdfs:label>
+        <rdfs:comment>A powered aeroplane with available engine power which allows it to maintain level flight but not to take off under its own power.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-UNMANNED_AERIAL_VEHICLE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-UNMANNED_AERIAL_VEHICLE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>UNMANNED_AERIAL_VEHICLE</rdfs:label>
+        <rdfs:comment>An unmanned aerial vehicle is a pilotless aircraft, in the sense of Article 8 of the Convention on International Civil Aviation, which is flown without a pilot-in-command on-board and is either remotely and fully controlled from another place (ground, another aircraft, space) or programmed and fully autonomous.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftType-UNMANNED_FREE_BALLOON -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftType-UNMANNED_FREE_BALLOON">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftType"/>
+        <rdfs:label>UNMANNED_FREE_BALLOON</rdfs:label>
+        <rdfs:comment>A non-power-driven, unmanned, lighter-than-air aircraft in free flight.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-A -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-A">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType"/>
+        <rdfs:label>A</rdfs:label>
+        <rdfs:comment>Up to but not including 49 ft (15 m)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-B -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-B">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType"/>
+        <rdfs:label>B</rdfs:label>
+        <rdfs:comment>49 ft (15 m) up to but not including 79 ft (24 m)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-C -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-C">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType"/>
+        <rdfs:label>C</rdfs:label>
+        <rdfs:comment>79 ft (24 m) up to but not including 118 ft (36 m)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-D -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-D">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType"/>
+        <rdfs:label>D</rdfs:label>
+        <rdfs:comment>118 ft (36 m) up to but not including 171 ft (52 m) </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-E -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-E">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType"/>
+        <rdfs:label>E</rdfs:label>
+        <rdfs:comment>171 ft (52 m) up to but not including 214 ft (65 m) </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-F -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType-F">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAircraftWingspanClassType"/>
+        <rdfs:label>F</rdfs:label>
+        <rdfs:comment>214 ft (65 m) up to but not including 262 ft (80 m) </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType-100_FT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType-100_FT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType"/>
+        <rdfs:label>100_FT</rdfs:label>
+        <rdfs:comment>The target is capable of reporting the altitude in 100 FT increments
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType-25_FT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType-25_FT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType"/>
+        <rdfs:label>25_FT</rdfs:label>
+        <rdfs:comment>The target is capable of reporting the altitude in 25 FT increments
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType-INVALID -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType-INVALID">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType"/>
+        <rdfs:label>INVALID</rdfs:label>
+        <rdfs:comment>INVALID
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType-UNKNOWN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType-UNKNOWN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeAltitudeReportingCapabilityType"/>
+        <rdfs:label>UNKNOWN</rdfs:label>
+        <rdfs:comment>UNKNOWN
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeClassB2TransmitPowerCapabilityType-GREATER_THAN_OR_EQUAL_TO_70_WATTS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeClassB2TransmitPowerCapabilityType-GREATER_THAN_OR_EQUAL_TO_70_WATTS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeClassB2TransmitPowerCapabilityType"/>
+        <rdfs:label>GREATER_THAN_OR_EQUAL_TO_70_WATTS</rdfs:label>
+        <rdfs:comment>Capability of class B2 equipment to transmit power greater than or equal to 70 watts.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeClassB2TransmitPowerCapabilityType-LESS_THAN_70_WATTS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeClassB2TransmitPowerCapabilityType-LESS_THAN_70_WATTS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeClassB2TransmitPowerCapabilityType"/>
+        <rdfs:label>LESS_THAN_70_WATTS</rdfs:label>
+        <rdfs:comment>Capability of class B2 equipment to transmit power smaller than 70 watts.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_ATN_VDL_MODE_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_ATN_VDL_MODE_2">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_ATN_VDL_MODE_2</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications ATN VDL Mode 2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_HFDL -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_HFDL">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_FANS_1/A_HFDL</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications FANS 1/A HFDL</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_SATCOM_INMARSAT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_SATCOM_INMARSAT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_FANS_1/A_SATCOM_INMARSAT</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications FANS 1/A SATCOM (INMARSAT)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_SATCOM_IRIDIUM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_SATCOM_IRIDIUM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_FANS_1/A_SATCOM_IRIDIUM</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications FANS 1/A SATCOM (Iridium)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_SATCOM_MTSAT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_SATCOM_MTSAT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_FANS_1/A_SATCOM_MTSAT</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications FANS 1/A SATCOM (MTSAT)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_VDL_MODE_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_VDL_MODE_2">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_FANS_1/A_VDL_MODE_2</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications FANS_1/A_VDL_Mode_2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_VDL_MODE_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_VDL_MODE_4">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_FANS_1/A_VDL_MODE_4</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications FANS 1/A VDL MODE 4 capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_VDL_MODE_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_FANS_1/A_VDL_MODE_A">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_FANS_1/A_VDL_MODE_A</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications FANS 1/A VDL Mode A</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_OVER_VDL_MODE_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_OVER_VDL_MODE_3">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_OVER_VDL_MODE_3</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications over VDL Mode 3</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_OVER_VDL_MODE_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_OVER_VDL_MODE_4">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_OVER_VDL_MODE_4</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications over VDL Mode 4</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_RTCA_SC_214 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-CPDLC_RTCA_SC_214">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>CPDLC_RTCA_SC_214</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications RTCA SC 214</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-FANS_1A/ACARS_DATA_LINK -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType-FANS_1A/ACARS_DATA_LINK">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeDatalinkCommunicationCapabilityType"/>
+        <rdfs:label>FANS_1A/ACARS_DATA_LINK</rdfs:label>
+        <rdfs:comment>Controller Pilot Data Link Communications FANS 1A / ACARS</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType-EQUIPPED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType-EQUIPPED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType"/>
+        <rdfs:label>EQUIPPED</rdfs:label>
+        <rdfs:comment>The aircraft is equipped with the aircraft equipment specified.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType-NOT_EQUIPPED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType-NOT_EQUIPPED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType"/>
+        <rdfs:label>NOT_EQUIPPED</rdfs:label>
+        <rdfs:comment>The aircraft is not equipped with the aircraft equipment specified.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType-UNKNOWN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType-UNKNOWN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeEquipmentStatusType"/>
+        <rdfs:label>UNKNOWN</rdfs:label>
+        <rdfs:comment>The status of the equipment specified is unknown for the aircraft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType-1">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType"/>
+        <rdfs:label>1</rdfs:label>
+        <rdfs:comment>Helicopter class 1.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType-2">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType"/>
+        <rdfs:label>2</rdfs:label>
+        <rdfs:comment>Helicopter class 2.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType-3">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeHelicopterPerformanceType"/>
+        <rdfs:label>3</rdfs:label>
+        <rdfs:comment>Helicopter class 3.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType-F -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType-F">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType"/>
+        <rdfs:label>F</rdfs:label>
+        <rdfs:comment>The life jackets are equipped with fluorescein.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType-L -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType-L">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType"/>
+        <rdfs:label>L</rdfs:label>
+        <rdfs:comment>The life jackets are equipped with lights.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType-U -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType-U">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType"/>
+        <rdfs:label>U</rdfs:label>
+        <rdfs:comment>Any life jacket radio is equipped with UHF on frequency 243.0 MHz.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType-V -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType-V">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeLifeJacketEquipmentType"/>
+        <rdfs:label>V</rdfs:label>
+        <rdfs:comment>Any life jacket radio is equipped with VHF on frequency 121.5 MHz.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_10">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_10</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 10
+Complete definition in ICAO Annex 16 Volume 1, Chapter 10
+Applicability:
+- “Propeller driven aeroplanes not exceeding 8616 kg – application for type certificate or derived version submitted on or after 17 november 1988.”
+
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_11">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_11</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 11
+Complete definition in ICAO Annex 16 Volume 1, Chapter 11
+Applicability:
+- “Helicopters not exceeding 3175 kg maximum certificated take off mass.”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_12">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_12</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 12
+Complete definition in ICAO Annex 16 Volume 1, Chapter 12
+Applicability:
+- “Supersonic aeroplanes”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_13">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_13</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 13
+Complete definition in ICAO Annex 16 Volume 1, Chapter 13
+Applicability:
+- “Tilt rotor aircraft”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_2">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_2</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 2
+Complete definition in ICAO Annex 16 Volume 1, Chapter 2
+Applicability: “Subsonic jet aeroplanes - Application for type certificate submitted before 6 october 1977”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_3">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_3</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 3
+Complete definition in ICAO Annex 16 Volume 1, Chapter 3
+Applicability:
+- “Subsonic jet aeroplanes – application for type certificate submitted on or after 6 october 1977 and before 1 january 2006”
+- “Propeller-driven aeroplanes over 5700 kg – application for type certificate submitted on or after 1 january 1985 and before 17 november 1988”
+- “Propeller-driven aeroplanes over 8616 kg – application for type certificate submitted on or after 6 october 1977 and before 1 january 2006”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_4">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_4</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 4
+Complete definition in ICAO Annex 16 Volume 1, Chapter 4
+Applicability:
+- “Subsonic jet aeroplanes – application for type certificate submitted on or after 1 january 2006”
+- “Propeller-Driven Aeroplanes over 8618 kg – application Certificate submitted on or after 1 january 2006”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_5">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_5</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 5
+Complete definition in ICAO Annex 16 Volume 1, Chapter 5
+Applicability:
+- “Propeller-Driven Aeroplanes over 5700 kg – application Certificate submitted before 1 january 1985”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_6">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_6</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 6
+Complete definition in ICAO Annex 16 Volume 1, Chapter 6
+Applicability:
+- “Propeller-Driven Aeroplanes not exceeding 8616 kg – application Certificate submitted before 17 november 1988”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_7">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_7</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 7
+Complete definition in ICAO Annex 16 Volume 1, Chapter 7
+Applicability:
+- “Propeller-Driven Short Take Off and Landing (STOL) Aeroplanes”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_8">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_8</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 8
+Complete definition in ICAO Annex 16 Volume 1, Chapter 8
+Applicability:
+- “Helicopters”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType-CHAPTER_9">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeNoiseCertificationType"/>
+        <rdfs:label>CHAPTER_9</rdfs:label>
+        <rdfs:comment>Aircraft noise certification chapter 9
+Complete definition in ICAO Annex 16 Volume 1, Chapter 9
+Applicability:
+- “Installed auxiliary power unites (APU) and associated aircraft/systems during ground operations”</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-AIRCRAFT_MAINTENANCE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-AIRCRAFT_MAINTENANCE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>AIRCRAFT_MAINTENANCE</rdfs:label>
+        <rdfs:comment>Vehicle used for aircraft maintenance activities.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-AIRPORT_MAINTENANCE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-AIRPORT_MAINTENANCE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>AIRPORT_MAINTENANCE</rdfs:label>
+        <rdfs:comment>Vehicle used for airport maintenance activities.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-ATC_EQUIPMENT_MAINTENANCE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-ATC_EQUIPMENT_MAINTENANCE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>ATC_EQUIPMENT_MAINTENANCE</rdfs:label>
+        <rdfs:comment>Vehicle used for maintenance activities for ATC equipment.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-BAGGAGE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-BAGGAGE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>BAGGAGE</rdfs:label>
+        <rdfs:comment>Vehicle used for baggage transport.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-BIRD_SCARER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-BIRD_SCARER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>BIRD_SCARER</rdfs:label>
+        <rdfs:comment>Vehicle used in bird scaring operations.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-BUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-BUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>BUS</rdfs:label>
+        <rdfs:comment>Bus for passenger and crew transport.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-CATERING -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-CATERING">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>CATERING</rdfs:label>
+        <rdfs:comment>Catering truck.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-EMERGENCY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-EMERGENCY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>EMERGENCY</rdfs:label>
+        <rdfs:comment>Emergency vehicle.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-FIRE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-FIRE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>FIRE</rdfs:label>
+        <rdfs:comment>Fire truck.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-FOLLOW_ME -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-FOLLOW_ME">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>FOLLOW_ME</rdfs:label>
+        <rdfs:comment>Follow-Me car.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-FUEL -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-FUEL">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>FUEL</rdfs:label>
+        <rdfs:comment>Refueling truck.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-GRASS_CUTTER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-GRASS_CUTTER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>GRASS_CUTTER</rdfs:label>
+        <rdfs:comment>Lawn Mower.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-POLICE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-POLICE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>POLICE</rdfs:label>
+        <rdfs:comment>Police vehicle.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-RUNWAY_SWEEPER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-RUNWAY_SWEEPER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>RUNWAY_SWEEPER</rdfs:label>
+        <rdfs:comment>Vehicle used for runway cleaning.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-SNOW_PLOUGH -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-SNOW_PLOUGH">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>SNOW_PLOUGH</rdfs:label>
+        <rdfs:comment>Snow-Plough.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-TUG -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-TUG">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>TUG</rdfs:label>
+        <rdfs:comment>Push-Back truck.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-UNKNOWN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType-UNKNOWN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurfaceVehicleIdentificationType"/>
+        <rdfs:label>UNKNOWN</rdfs:label>
+        <rdfs:comment>An unknown vehicle type.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_1090MHZ_ADS-B_OUT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_1090MHZ_ADS-B_OUT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS-B_1090MHZ_ADS-B_OUT</rdfs:label>
+        <rdfs:comment>ADS-B with dedicated 1090 MHz ADS-B &#39;out&#39; capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_1090MHZ_ADS-B_OUT_IN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_1090MHZ_ADS-B_OUT_IN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS-B_1090MHZ_ADS-B_OUT_IN</rdfs:label>
+        <rdfs:comment>ADB-B with dedicated 1090 MHz ADS-B &#39;out&#39; and &#39;in&#39; capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_OUT_IN_UAT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_OUT_IN_UAT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS-B_OUT_IN_UAT</rdfs:label>
+        <rdfs:comment>ADS-B &#39;out&#39; and &#39;in&#39; capability using UAT</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_OUT_IN_VDL_MODE_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_OUT_IN_VDL_MODE_4">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS-B_OUT_IN_VDL_MODE_4</rdfs:label>
+        <rdfs:comment>ADS-B &#39;out&#39; and &#39;in&#39; capability using VDL Mode 4</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_OUT_UAT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_OUT_UAT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS-B_OUT_UAT</rdfs:label>
+        <rdfs:comment>ADS-B &#39;out&#39; capability using UAT</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_OUT_VDL_MODE_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-B_OUT_VDL_MODE_4">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS-B_OUT_VDL_MODE_4</rdfs:label>
+        <rdfs:comment>ADS-B &#39;out&#39; capability using VDL Mode 4</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-C_ATN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-C_ATN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS-C_ATN</rdfs:label>
+        <rdfs:comment>ADS-C with ATN capabilities</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-C_FANS_1/A -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS-C_FANS_1/A">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS-C_FANS_1/A</rdfs:label>
+        <rdfs:comment>ADS-C with FANS 1/A capabilities</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS_B_IN_1090_MHZ -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS_B_IN_1090_MHZ">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS_B_IN_1090_MHZ</rdfs:label>
+        <rdfs:comment>ADS-B with dedicated 1090 MHz ADS-B &#39;in&#39; capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS_B_IN_UAT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS_B_IN_UAT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS_B_IN_UAT</rdfs:label>
+        <rdfs:comment>ADS-B &#39;in&#39; capability using UAT</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS_B_IN_VDL_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-ADS_B_IN_VDL_4">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>ADS_B_IN_VDL_4</rdfs:label>
+        <rdfs:comment>ADS-B &#39;in&#39; capability using VDL Mode 4</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_A">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>MODE_A</rdfs:label>
+        <rdfs:comment>Transponder Mode A (4 digits - 4096 codes)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_A_AND_C -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_A_AND_C">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>MODE_A_AND_C</rdfs:label>
+        <rdfs:comment>Transponder Mode A (4 digits - 4096 codes) and Mode C</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>MODE_S</rdfs:label>
+        <rdfs:comment>Transponder Mode S, including both pressure-altitude and aircraft identification capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_ID_NO_PRESSURE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_ID_NO_PRESSURE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>MODE_S_ID_NO_PRESSURE</rdfs:label>
+        <rdfs:comment>Transponder Mode S, including aircraft identification transmission, but no pressure-altitude capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_ID_PRESSURE_ENHANCED_SURVEILLANCE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_ID_PRESSURE_ENHANCED_SURVEILLANCE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>MODE_S_ID_PRESSURE_ENHANCED_SURVEILLANCE</rdfs:label>
+        <rdfs:comment>Transponder Mode S, including aircraft identification transmission, pressure-altitude transmission and enhanced surveillance capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_ID_PRESSURE_EXTENDED_SQUITTER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_ID_PRESSURE_EXTENDED_SQUITTER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>MODE_S_ID_PRESSURE_EXTENDED_SQUITTER</rdfs:label>
+        <rdfs:comment>Transponder Mode S, including aircraft identification transmission, pressure-altitude transmission and extended squitter (ADS-B) capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_ID_PRESSURE_EXT_SQUITTER_ENHANCED_SURVEILLANCE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_ID_PRESSURE_EXT_SQUITTER_ENHANCED_SURVEILLANCE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>MODE_S_ID_PRESSURE_EXT_SQUITTER_ENHANCED_SURVEILLANCE</rdfs:label>
+        <rdfs:comment>Transponder Mode S, including aircraft identification transmission, pressure-altitude transmission, extended squitter (ADS-B) capability and enhanced surveillance capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_NO_ID_NO_PRESSURE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_NO_ID_NO_PRESSURE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>MODE_S_NO_ID_NO_PRESSURE</rdfs:label>
+        <rdfs:comment>Transponder Mode S without both aircraft identification and pressure-altitude capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_NO_ID_PRESSURE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType-MODE_S_NO_ID_PRESSURE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurveillanceCapabilityType"/>
+        <rdfs:label>MODE_S_NO_ID_PRESSURE</rdfs:label>
+        <rdfs:comment>Transponder Mode S, including pressure-altitude transmission, but no aircraft identification capability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType-DESERT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType-DESERT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType"/>
+        <rdfs:label>DESERT</rdfs:label>
+        <rdfs:comment>Desert survival equipment is carried</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType-JUNGLE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType-JUNGLE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType"/>
+        <rdfs:label>JUNGLE</rdfs:label>
+        <rdfs:comment>Jungle survival equipment is carried</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType-MARITIME -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType-MARITIME">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType"/>
+        <rdfs:label>MARITIME</rdfs:label>
+        <rdfs:comment>Maritime survival equipment is carried</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType-POLAR -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType-POLAR">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSurvivalEquipmentType"/>
+        <rdfs:label>POLAR</rdfs:label>
+        <rdfs:comment>Polar survival equipment is carried</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType-NO_CAPABILITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType-NO_CAPABILITY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType"/>
+        <rdfs:label>NO_CAPABILITY</rdfs:label>
+        <rdfs:comment>No capability for Trajectory Change Reports
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType-RESERVED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType-RESERVED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType"/>
+        <rdfs:label>RESERVED</rdfs:label>
+        <rdfs:comment>Reserved
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType-SUPPORT_FOR_MULTIPLE_TC -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType-SUPPORT_FOR_MULTIPLE_TC">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType"/>
+        <rdfs:label>SUPPORT_FOR_MULTIPLE_TC</rdfs:label>
+        <rdfs:comment>Support for multiple TC reports
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType-SUPPORT_FOR_TC -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType-SUPPORT_FOR_TC">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTargetTrajectoryChangeReportCapabilityType"/>
+        <rdfs:label>SUPPORT_FOR_TC</rdfs:label>
+        <rdfs:comment>Support for TC+0 reports only
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability-1250_ALERTING -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability-1250_ALERTING">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability"/>
+        <rdfs:label>1250_ALERTING</rdfs:label>
+        <rdfs:comment>TCAS with an alert envelope maximum altitude of 1250 ft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability-1650_ALERTING -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability-1650_ALERTING">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability"/>
+        <rdfs:label>1650_ALERTING</rdfs:label>
+        <rdfs:comment>TCAS with an alert envelope maximum altitude of 1650 ft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability-950_ALERTING -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability-950_ALERTING">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTerrainAwarenessAndGroundProximityAlertingCapability"/>
+        <rdfs:label>950_ALERTING</rdfs:label>
+        <rdfs:comment>TCAS with an alert envelope maximum altitude of 950 ft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_1">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTransponderType"/>
+        <rdfs:label>MODE_1</rdfs:label>
+        <rdfs:comment>Mode 1 provides 2-digit 5-bit mission code. (military only - cockpit selectable)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_2">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTransponderType"/>
+        <rdfs:label>MODE_2</rdfs:label>
+        <rdfs:comment>Mode 2 provides 4-digit octal unit code. (military only - set on ground for fighters, can be changed in flight by transport aircraft)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_3A -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_3A">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTransponderType"/>
+        <rdfs:label>MODE_3A</rdfs:label>
+        <rdfs:comment>Mode 3/A provides a 4-digit octal identification code for the aircraft, assigned by the air traffic controller. (military and civilian)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_4">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTransponderType"/>
+        <rdfs:label>MODE_4</rdfs:label>
+        <rdfs:comment>Mode 4 provides a 3-pulse reply to crypto coded challenge. (military only)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_5">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTransponderType"/>
+        <rdfs:label>MODE_5</rdfs:label>
+        <rdfs:comment>Mode 5 provides a cryptographically secured version of Mode S and ADS-B GPS position. (military only)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_C -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_C">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTransponderType"/>
+        <rdfs:label>MODE_C</rdfs:label>
+        <rdfs:comment>Mode C provides 4-digit octal code for aircraft&#39;s pressure altitude. (military and civilian)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_S -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTransponderType-MODE_S">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTransponderType"/>
+        <rdfs:label>MODE_S</rdfs:label>
+        <rdfs:comment>Mode S provides multiple information formats to a selective interrogation. Each aircraft is assigned a fixed 24-bit address. (military and civilian)
+
+Mode S, or mode select, despite also being called a transponder radar system replacement for Air Traffic Control Radar Beacon System (ATCRBS), is actually a data packet protocol which can be used to augment ATCRBS transponder positioning equipment (radar and TCAS). Mode S is designed to fully interface with ATCRBS systems: mode S SSRs can interrogate ATCRBS transponders, and AIS-P transponders will also reply to older ATCRBS and TCAS interrogations.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType-HEAVY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType-HEAVY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType"/>
+        <rdfs:label>HEAVY</rdfs:label>
+        <rdfs:comment>An aircraft type with a maximum certified take-off mass of 136000 kg or more.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType-LIGHT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType-LIGHT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType"/>
+        <rdfs:label>LIGHT</rdfs:label>
+        <rdfs:comment>An aircraft type with a maximum certified take-off mass of 7000 kg or less.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType-MEDIUM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType-MEDIUM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType"/>
+        <rdfs:label>MEDIUM</rdfs:label>
+        <rdfs:comment>An aircraft type with a maximum certified take-off mass of less than 136000 kg. but more than 7000 kg.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType-SUPER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType-SUPER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType"/>
+        <rdfs:label>SUPER</rdfs:label>
+        <rdfs:comment>A SUPER HEAVY aircraft type e.g. the Airbus A380-800. (In the order of 560,000kg).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType-UNDEFINED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType-UNDEFINED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeTurbulenceCategoryType"/>
+        <rdfs:label>UNDEFINED</rdfs:label>
+        <rdfs:comment>Not defined, none of the other values is applicable: applicable for AircraftTypes for which it is not clear whether the WTC is light, medium or heavy (e.g. helicopters). There is no relationship with the maximum certified take-off mass.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-H -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-H">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType"/>
+        <rdfs:label>H</rdfs:label>
+        <rdfs:comment>Heavy Aircraft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-HE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-HE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType"/>
+        <rdfs:label>HE</rdfs:label>
+        <rdfs:comment>Helicopter.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-L -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-L">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType"/>
+        <rdfs:label>L</rdfs:label>
+        <rdfs:comment>Light Aircraft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-MH -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-MH">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType"/>
+        <rdfs:label>MH</rdfs:label>
+        <rdfs:comment>Medium when Trailing; Heavy when Leading.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-MJ -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-MJ">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType"/>
+        <rdfs:label>MJ</rdfs:label>
+        <rdfs:comment>Medium-Jet Aircraft.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-MT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType-MT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWakeVortexClassificationType"/>
+        <rdfs:label>MT</rdfs:label>
+        <rdfs:comment>Medium Turboprop Aircraft.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+

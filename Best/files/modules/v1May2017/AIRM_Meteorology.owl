@@ -1,0 +1,2398 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="file:/Users/audunvennesland/Documents/PhD/Development/eclipse_workspace/Best/AIRM_Meteorology.owl#"
+     xml:base="file:/Users/audunvennesland/Documents/PhD/Development/eclipse_workspace/Best/AIRM_Meteorology.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AIRM="http://www.best-project.org/owl/AIRM#">
+    <owl:Ontology rdf:about="file:/Users/audunvennesland/Documents/PhD/Development/eclipse_workspace/Best/AIRM_Meteorology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeCondition-aerodrome -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AerodromeCondition-aerodrome">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AerodromeCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeCondition-aerodromeSeaState -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AerodromeCondition-aerodromeSeaState">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AerodromeCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#SeaCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeCondition-cloudCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AerodromeCondition-cloudCondition">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AerodromeCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Cloud"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeCondition-qfe -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AerodromeCondition-qfe">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AerodromeCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValPressureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeCondition-qnh -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AerodromeCondition-qnh">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AerodromeCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValPressureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AirspaceCondition-airspace -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AirspaceCondition-airspace">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Airspace"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AirspaceCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-airPressure -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-airPressure">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValPressureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-airTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-airTemperature">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-dewpointTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-dewpointTemperature">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-horizontalVisibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-horizontalVisibility">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#HorizontalVisibility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-maximumAirTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-maximumAirTemperature">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-minimumAirTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-minimumAirTemperature">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-tropopause -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-tropopause">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Tropopause"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-verticalVisibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-verticalVisibility">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Cloud-cloudAmount -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Cloud-cloudAmount">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Cloud"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudAmountType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Cloud-cloudType -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Cloud-cloudType">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Cloud"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Contour-weathercondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Contour-weathercondition">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Contour"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#WeatherCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ConvectionCell-convection -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#ConvectionCell-convection">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Convection"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ConvectionCell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ConvectionCell-convectionCellOvershootPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#ConvectionCell-convectionCellOvershootPosition">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ConvectionCell"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#TwoDimensionalPointType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ConvectionCell-convectionCellTopVariation -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#ConvectionCell-convectionCellTopVariation">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ConvectionCell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ConvectionCell-convectionCellType -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#ConvectionCell-convectionCellType">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeConvectionCellType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ConvectionCell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ConvectionCell-volume -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#ConvectionCell-volume">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#AirspaceVolume"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#ConvectionCell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#HorizontalVisibility-minimumVisibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#HorizontalVisibility-minimumVisibility">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#HorizontalVisibility"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#HorizontalVisibility-minimumVisibilityDirection -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#HorizontalVisibility-minimumVisibilityDirection">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeCompassPointType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#HorizontalVisibility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#HorizontalVisibility-prevailingVisibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#HorizontalVisibility-prevailingVisibility">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#HorizontalVisibility"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#MovementDescription-speed -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#MovementDescription-speed">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#MovementDescription"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Obscuration-type -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Obscuration-type">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeObscurationType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Obscuration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Precipitation-type -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Precipitation-type">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Precipitation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RouteCondition-route -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#RouteCondition-route">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Route"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#RouteCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayCondition-qfe -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#RunwayCondition-qfe">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#RunwayCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValPressureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayCondition-runway -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#RunwayCondition-runway">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Runway"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#RunwayCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayCondition-rvr -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#RunwayCondition-rvr">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#RunwayCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#RunwayVisualRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayCondition-temperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#RunwayCondition-temperature">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#RunwayCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayVisualRange-readingPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#RunwayVisualRange-readingPosition">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeRVRReadingType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#RunwayVisualRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayVisualRange-rvrTendency -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#RunwayVisualRange-rvrTendency">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeRVRTendencyType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#RunwayVisualRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayVisualRange-rvrValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#RunwayVisualRange-rvrValue">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#RunwayVisualRange"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayVisualRange-rvrValueInterpretation -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#RunwayVisualRange-rvrValueInterpretation">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeValueInterpretationType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#RunwayVisualRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SeaCondition-sea -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#SeaCondition-sea">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Sea"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#SeaCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SeaCondition-seaState -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#SeaCondition-seaState">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#SeaCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SeaCondition-significantWaveHeight -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#SeaCondition-significantWaveHeight">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#SeaCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValVerticalDistanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SeaCondition-surfaceTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#SeaCondition-surfaceTemperature">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#SeaCondition"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TropicalCyclone-centralPressure -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#TropicalCyclone-centralPressure">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TropicalCyclone"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValPressureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TropicalCyclone-maxSurfaceWindSpeed -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#TropicalCyclone-maxSurfaceWindSpeed">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TropicalCyclone"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Tropopause-temperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Tropopause-temperature">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Tropopause"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Turbulence-turbulenceType -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Turbulence-turbulenceType">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeTurbulenceType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Turbulence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#VolcanicActivity-ashCloud -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#VolcanicActivity-ashCloud">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#VolcanicActivity"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#VolcanicAshCloud"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#VolcanicActivity-volcano -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#VolcanicActivity-volcano">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#VolcanicActivity"/>
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Volcano"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#VolcanicAshCloud-ashConcentration -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#VolcanicAshCloud-ashConcentration">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValConcentrationType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#VolcanicAshCloud"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherCondition-changeIndicator -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherCondition-changeIndicator">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherPhenomenon-base -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherPhenomenon-base">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherPhenomenon-intensity -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherPhenomenon-intensity">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherPhenomenon-movement -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherPhenomenon-movement">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#MovementDescription"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherPhenomenon-phenomenonType -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherPhenomenon-phenomenonType">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherPhenomenon-significantWeatherQualifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherPhenomenon-significantWeatherQualifier">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherPhenomenon-top -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherPhenomenon-top">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherPhenomenon-weatherCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherPhenomenon-weatherCondition">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#WeatherCondition"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-crosswind -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Wind-crosswind">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-headwind -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Wind-headwind">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-maxWindSpeed -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Wind-maxWindSpeed">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-minWindSpeed -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Wind-minWindSpeed">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-verticalWindGust -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Wind-verticalWindGust">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-windGust -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Wind-windGust">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-windSpeed -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#Wind-windSpeed">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WindLayer-height -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WindLayer-height">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WindLayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WindLayer-windCharacteristics -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WindLayer-windCharacteristics">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WindLayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WindLayer-windInfo -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WindLayer-windInfo">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WindLayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WindLayer-windVariesFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WindLayer-windVariesFrom">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WindLayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WindLayer-windVariesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WindLayer-windVariesTo">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WindLayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WindShear-level -->
+
+    <owl:ObjectProperty rdf:about="http://www.best-project.org/owl/AIRM#WindShear-level">
+        <rdfs:range rdf:resource="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WindShear"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-maximumAirTemperatureTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-maximumAirTemperatureTime">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-minimumAirTemperatureTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-minimumAirTemperatureTime">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition-relativeHumidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition-relativeHumidity">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Contour-contourValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Contour-contourValue">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Contour"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Icing-accretionRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Icing-accretionRate">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Icing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#MovementDescription-directionTowards -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#MovementDescription-directionTowards">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#MovementDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Precipitation-amount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Precipitation-amount">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Precipitation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TropicalCyclone-name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#TropicalCyclone-name">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#TropicalCyclone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Turbulence-edr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Turbulence-edr">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Turbulence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherCondition-analysisTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherCondition-analysisTime">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherCondition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherCondition-confidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherCondition-confidence">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherCondition-probability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#WeatherCondition-probability">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#WeatherCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-extremeClockwiseWindDirection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Wind-extremeClockwiseWindDirection">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-extremeCounterClockwiseWindDirection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Wind-extremeCounterClockwiseWindDirection">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-windDirection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.best-project.org/owl/AIRM#Wind-windDirection">
+        <rdfs:domain rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Aerodrome -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Aerodrome"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeCondition -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AerodromeCondition">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AerodromeCondition-cavok -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AerodromeCondition-cavok">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AerodromeCondition"/>
+        <rdfs:comment>Visibility, cloud and present weather better than prescribed values or conditions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Airspace -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Airspace"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AirspaceCondition -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AirspaceCondition">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AirspaceVolume -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AirspaceVolume"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#AviationCondition -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#AviationCondition">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherCondition"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Cloud -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Cloud-isAmoutAndBaseNotObservable -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Cloud-isAmoutAndBaseNotObservable">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#Cloud"/>
+        <rdfs:comment>Indication that cumulonimbus clouds or towering cumulus clouds are detected by the automatic observing system but the cloud amount and the height of cloud base cannot be observed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Cloud-isEmbedded -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Cloud-isEmbedded">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#Cloud"/>
+        <rdfs:comment>Surrounded, or part of a wider cloud layer, in opposition to isolated.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Cloud-isNoCloudDetected -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Cloud-isNoCloudDetected">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#Cloud"/>
+        <rdfs:comment>No clouds are detected by the automatic observing system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Cloud-isNoSignificantCloudDetected -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Cloud-isNoSignificantCloudDetected">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#Cloud"/>
+        <rdfs:comment>No clouds of operational significance are detected by the ceilometer(s) in reports from fully automatic observing systems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Cloud-isObscured -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Cloud-isObscured">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#Cloud"/>
+        <rdfs:comment>Hidden or out of sight by haze, smoke or cloud for example.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Cloud-isWidespread -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Cloud-isWidespread">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#Cloud"/>
+        <rdfs:comment>Affecting a large area.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudAmountType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudAmountType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCompassPointType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeCompassPointType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeConvectionCellType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeConvectionCellType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeObscurationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeObscurationType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeRVRReadingType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeRVRReadingType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeRVRTendencyType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeRVRTendencyType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTurbulenceType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeTurbulenceType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeValueInterpretationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeValueInterpretationType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Contour -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Contour">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Convection -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Convection">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ConvectionCell -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ConvectionCell">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#HorizontalVisibility -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#HorizontalVisibility">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#HorizontalVisibility-isPrevailingVisibilityAbove10000metres -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#HorizontalVisibility-isPrevailingVisibilityAbove10000metres">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#HorizontalVisibility"/>
+        <rdfs:comment>Indication that the prevailing visibility is of at least 10000 meters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#HorizontalVisibility-isUnidirectionalVisibility -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#HorizontalVisibility-isUnidirectionalVisibility">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#HorizontalVisibility"/>
+        <rdfs:comment>Indication whether the horizontalVisibility is given for a single direction or not.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Icing -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Icing">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#MovementDescription -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#MovementDescription">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#MovementDescription-isStationary -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#MovementDescription-isStationary">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#MovementDescription"/>
+        <rdfs:comment>Indication whether a meteorological phenomenon is moving or not.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Obscuration -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Obscuration">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Precipitation -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Precipitation">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Route -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Route"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RouteCondition -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#RouteCondition">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Runway -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Runway"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayCondition -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#RunwayCondition">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#AviationCondition"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#RunwayVisualRange -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#RunwayVisualRange">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Sea -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Sea"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#SeaCondition -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#SeaCondition">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherCondition"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TropicalCyclone -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#TropicalCyclone">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Tropopause -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Tropopause">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Turbulence -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Turbulence">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#TwoDimensionalPointType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#TwoDimensionalPointType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValConcentrationType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValConcentrationType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValDistanceType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValDistanceType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValPressureType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValPressureType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValSpeedType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValSpeedType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValTemperatureType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValTemperatureType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#ValVerticalDistanceType -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#ValVerticalDistanceType"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#VolcanicActivity -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#VolcanicActivity">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#VolcanicActivity-isErupting -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#VolcanicActivity-isErupting">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#VolcanicActivity"/>
+        <rdfs:comment>Indication wether a volcano is erupting or not.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#VolcanicAshCloud -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#VolcanicAshCloud">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Volcano -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Volcano"/>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherCondition -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#WeatherCondition">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherCondition-hasNoSignificantWeather -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#WeatherCondition-hasNoSignificantWeather">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherCondition"/>
+        <rdfs:comment>Indication that no specified en-route weather phenomena which may affect the safety of aircraft operations is occurring or expected to occur.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WeatherPhenomenon -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#WeatherPhenomenon">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Wind">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-isCalm -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Wind-isCalm">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+        <rdfs:comment>Indication that the wind is forecast to be less than 0.5 m/s (1 kt).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#Wind-isVariable -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#Wind-isVariable">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#Wind"/>
+        <rdfs:comment>Indication that the direction of the wind changes frequently. According to Annex 3 the wind is reported as variable (VRB) in local routine or special reports, in METAR and SPECI, when one of the following situations occur:
+- when the total variation is 60 or more and less than 180 and the wind speed is less than 1.5 m/s (3 kt), the wind direction shall be reported as variable with no mean wind direction; or
+- when the total variation is 180 or more, the wind direction shall be reported as variable with no mean wind direction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WindLayer -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#WindLayer">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#WindShear -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#WindShear">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#WeatherPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_ -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#_Codelists_Meteorology_">
+        <rdfs:subClassOf rdf:resource="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#_Meteorology_ -->
+
+    <owl:Class rdf:about="http://www.best-project.org/owl/AIRM#_Meteorology_"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType-BECMG -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType-BECMG">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType"/>
+        <rdfs:label>BECMG</rdfs:label>
+        <rdfs:comment>A code used to describe changes where the meteorological conditions are expected to reach or pass through specified threshold values at a regular or irregular rate and at an unspecified time during the time period.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType-NOSIG -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType-NOSIG">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType"/>
+        <rdfs:label>NOSIG</rdfs:label>
+        <rdfs:comment>No significant changes are forecast with respect to the current meteorological conditions.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType-TEMPO -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType-TEMPO">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeChangeIndicatorType"/>
+        <rdfs:label>TEMPO</rdfs:label>
+        <rdfs:comment>A code used to describe expected frequent or infrequent temporary fluctuations in the meteorological conditions which reach or pass specified threshold values and last for a period of less than one hour in each instance and, in the aggregate, cover less than one-half of the forecast period during which the fluctuations are expected to occur.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudAmountType-BROKEN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudAmountType-BROKEN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudAmountType"/>
+        <rdfs:label>BROKEN</rdfs:label>
+        <rdfs:comment>(5 to 7 oktas)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudAmountType-FEW -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudAmountType-FEW">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudAmountType"/>
+        <rdfs:label>FEW</rdfs:label>
+        <rdfs:comment>(1 to 2 oktas)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudAmountType-OVERCAST -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudAmountType-OVERCAST">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudAmountType"/>
+        <rdfs:label>OVERCAST</rdfs:label>
+        <rdfs:comment>(8 oktas)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudAmountType-SCATTERED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudAmountType-SCATTERED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudAmountType"/>
+        <rdfs:label>SCATTERED</rdfs:label>
+        <rdfs:comment>(3 to 4 oktas)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudAmountType-SCATTERED_BROKEN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudAmountType-SCATTERED_BROKEN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudAmountType"/>
+        <rdfs:label>SCATTERED_BROKEN</rdfs:label>
+        <rdfs:comment>SCATTERED or BROKEN</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudAmountType-SKY_CLEAR -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudAmountType-SKY_CLEAR">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudAmountType"/>
+        <rdfs:label>SKY_CLEAR</rdfs:label>
+        <rdfs:comment>(0 oktas)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-ALTOCUMULUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-ALTOCUMULUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>ALTOCUMULUS</rdfs:label>
+        <rdfs:comment>White or grey, or both white and grey, patch, sheet or layer of cloud, generally with shading, composed of laminae, rounded masses, rolls, etc., which are sometimes partly fibrous or diffuse and which may or may not be merged; most of the regularly arranged small elements usually have an apparent width of between one and five degrees.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-ALTOSTRATUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-ALTOSTRATUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>ALTOSTRATUS</rdfs:label>
+        <rdfs:comment>Greyish or bluish cloud sheet or layer of striated, fibrous or uniform appearance, totally or partly covering the sky, and having parts thin enough to reveal the Sun at least vaguely, as through ground glass. Altostratus does not show halo phenomena.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-CIRROCUMULUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-CIRROCUMULUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>CIRROCUMULUS</rdfs:label>
+        <rdfs:comment>Thin, white patch, sheet or layer of cloud without shading, composed of very small elements in the form of grains, ripples, etc., merged or separated, and more or less regularly arranged; most of the elements have an apparent width of less than one degree.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-CIRROSTRATUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-CIRROSTRATUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>CIRROSTRATUS</rdfs:label>
+        <rdfs:comment>Transparent, whitish cloud veil of fibrous (hair-like) or smooth appearance, totally or partially covering the sky, and generally producing halo phenomena.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-CIRRUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-CIRRUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>CIRRUS</rdfs:label>
+        <rdfs:comment>Detached clouds in the form of white, delicate filaments or white or mostly white patches or narrow bands. These clouds have a fibrous (hair-like) appearance, or a silky sheen, or both.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-CUMULONIMBUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-CUMULONIMBUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>CUMULONIMBUS</rdfs:label>
+        <rdfs:comment>Dense and heavy cloud with a considerable mountain- or tower-shaped vertical extension. These clouds, the base of which is quite dark, may give rise to thunderstorms and generally heavy precipitation in the form of rain, snow, fine or large hail, sometimes accompanied by strong wind gusts.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-CUMULUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-CUMULUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>CUMULUS</rdfs:label>
+        <rdfs:comment>Detached cloud, generally dense and with sharp outlines, developing vertically in the form of rising mounds, domes or towers, of which the bulging upper part is often like a cauliflower. The sunlit parts are mostly brilliant white and the base is relatively dark and nearly horizontal. Sometimes Cumulus clouds are ragged.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-NIMBOSTRATUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-NIMBOSTRATUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>NIMBOSTRATUS</rdfs:label>
+        <rdfs:comment>Grey cloud layer, often dark, the appearance of which is rendered diffuse by more or less continuously falling rain or snow, which in most cases reaches the ground. It is thick enough throughout to blot out the Sun. Low, ragged clouds frequently occur below the layer, with which they may or may not merge.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-STRATOCUMULUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-STRATOCUMULUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>STRATOCUMULUS</rdfs:label>
+        <rdfs:comment>Banks or a layer of grey or whitish clouds generally caught on mountaintops. The base may be fuzzy or smooth and generally horizontal.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-STRATUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-STRATUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>STRATUS</rdfs:label>
+        <rdfs:comment>Generally grey cloud layer with a fairly uniform base, which may give drizzle, ice prisms or snow grains. When the Sun is visible through the cloud, its outline is clearly discernible; Stratus does not produce halo phenomena except, possibly, at very low temperatures; sometimes it appears in the form of ragged patches.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeCloudType-TOWERING_CUMULUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeCloudType-TOWERING_CUMULUS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeCloudType"/>
+        <rdfs:label>TOWERING_CUMULUS</rdfs:label>
+        <rdfs:comment> A descriptive term, used mostly in weather observing, for cumulus congestus (Cu con).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType-CONSTANT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType-CONSTANT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType"/>
+        <rdfs:label>CONSTANT</rdfs:label>
+        <rdfs:comment>Indicates no sensible variation of the top altitude of a convection cell.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType-DECAYING -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType-DECAYING">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType"/>
+        <rdfs:label>DECAYING</rdfs:label>
+        <rdfs:comment>Indicates that the top altitude of a convection cell is lowering.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType-GROWING -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType-GROWING">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeConvectionCellTopVariationType"/>
+        <rdfs:label>GROWING</rdfs:label>
+        <rdfs:comment>Indicates that the top altitude of a convection cell is increasing.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeConvectionCellType-CELL_BASE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeConvectionCellType-CELL_BASE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeConvectionCellType"/>
+        <rdfs:label>CELL_BASE</rdfs:label>
+        <rdfs:comment>The base (cell base) of a cell.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeConvectionCellType-CELL_TOP -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeConvectionCellType-CELL_TOP">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeConvectionCellType"/>
+        <rdfs:label>CELL_TOP</rdfs:label>
+        <rdfs:comment>The upper part of a cell (cell top).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeObscurationType-DUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeObscurationType-DUST">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeObscurationType"/>
+        <rdfs:label>DUST</rdfs:label>
+        <rdfs:comment>Earth or other solid matter in a minute and fine state of subdivision, so that the particles are small and light enough to be easily raised and carried in a cloud by the wind; any substance comminuted or pulverized; powder.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeObscurationType-FOG -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeObscurationType-FOG">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeObscurationType"/>
+        <rdfs:label>FOG</rdfs:label>
+        <rdfs:comment>A suspension of very small, usually microscopic water droplets in the air, reducing visibility at the Earth&#39;s surface.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeObscurationType-HAZE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeObscurationType-HAZE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeObscurationType"/>
+        <rdfs:label>HAZE</rdfs:label>
+        <rdfs:comment>Suspension in the atmosphere of extremely small, dry particles which are invisible to the naked eye but numerous enough to give the sky an opalescent appearance.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeObscurationType-MIST -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeObscurationType-MIST">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeObscurationType"/>
+        <rdfs:label>MIST</rdfs:label>
+        <rdfs:comment>Suspension in the air of microscopic water droplets or wet hygroscopic particles which reduce the visibility at the Earth&#39;s surface.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeObscurationType-SAND -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeObscurationType-SAND">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeObscurationType"/>
+        <rdfs:label>SAND</rdfs:label>
+        <rdfs:comment>A material consisting of comminuted fragments and water-worn particles of rocks (mainly silicious) finer than those of which gravel is composed.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeObscurationType-SMOKE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeObscurationType-SMOKE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeObscurationType"/>
+        <rdfs:label>SMOKE</rdfs:label>
+        <rdfs:comment>Suspension in the atmosphere of small particles produced by combustion.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeObscurationType-SPRAY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeObscurationType-SPRAY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeObscurationType"/>
+        <rdfs:label>SPRAY</rdfs:label>
+        <rdfs:comment>Ensemble of water droplets torn by the wind from the surface of an extensive body of water, generally from the wave crests, and carried up a short distance into the air.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeObscurationType-UNIDENTIFIED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeObscurationType-UNIDENTIFIED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeObscurationType"/>
+        <rdfs:label>UNIDENTIFIED</rdfs:label>
+        <rdfs:comment>That has not been identified; of which the identity has not been established.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeObscurationType-VOLCANIC_ASH -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeObscurationType-VOLCANIC_ASH">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeObscurationType"/>
+        <rdfs:label>VOLCANIC_ASH</rdfs:label>
+        <rdfs:comment>Extremely fine particles of pulverized rock, the composition of which, generally speaking, is comprised predominantly of silica (&gt; 50 per cent), together with smaller amounts of the oxides of aluminium, iron, calcium and sodium.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType-DRIZZLE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType-DRIZZLE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:label>DRIZZLE</rdfs:label>
+        <rdfs:comment>Fairly uniform precipitation in very fine drops of water (diameter less than 0.5 mm) very close to one another, falling from a cloud.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType-HAIL -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType-HAIL">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:label>HAIL</rdfs:label>
+        <rdfs:comment>Precipitation of either transparent, or partly or completely opaque particles of ice (hailstones), usually spheroidal, conical or irregular in form and of diameter very generally between 5 and 50 millimetres, which falls from a cloud either separately or agglomerated into irregular lumps.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType-ICE_CRYSTALS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType-ICE_CRYSTALS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:label>ICE_CRYSTALS</rdfs:label>
+        <rdfs:comment>Any one of a number of macroscopic crystalline forms of ice including hexagonal columns and platelets, dendritic crystals, ice needles and their combinations.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType-ICE_PELLETS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType-ICE_PELLETS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:label>ICE_PELLETS</rdfs:label>
+        <rdfs:comment>Precipitation of transparent particles of ice which are spherical or irregular, rarely conical, and which have a diameter of 5 mm or less.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType-RAIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType-RAIN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:label>RAIN</rdfs:label>
+        <rdfs:comment>Precipitation of liquid water particles, either in the form of drops of more than 0.5 mm in diameter, or of smaller widely scattered drops.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType-SMALL_HAIL -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType-SMALL_HAIL">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:label>SMALL_HAIL</rdfs:label>
+        <rdfs:comment>Precipitation of translucent ice particles, which falls from a cloud. These particles are almost always spherical and sometimes have conical tips. Their diameter may attain or even exceed five millimetres.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType-SNOW -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType-SNOW">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:label>SNOW</rdfs:label>
+        <rdfs:comment>Precipitation of ice crystals, isolated or agglomerated, falling from a cloud.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType-SNOW_GRAINS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType-SNOW_GRAINS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:label>SNOW_GRAINS</rdfs:label>
+        <rdfs:comment>Precipitation of very small opaque white particles of ice which fall from a cloud and which are fairly flat or elongated with diameters generally less than 1 mm.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType-UNIDENTIFIED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType-UNIDENTIFIED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:label>UNIDENTIFIED</rdfs:label>
+        <rdfs:comment>Unidentified precipitation.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodePrecipitationType-UNKNOWN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodePrecipitationType-UNKNOWN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodePrecipitationType"/>
+        <rdfs:label>UNKNOWN</rdfs:label>
+        <rdfs:comment>Unknown precipitation.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeRVRReadingType-MIDDLE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeRVRReadingType-MIDDLE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeRVRReadingType"/>
+        <rdfs:label>MIDDLE</rdfs:label>
+        <rdfs:comment>Middle or centre of runway.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeRVRReadingType-TAKEOFF -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeRVRReadingType-TAKEOFF">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeRVRReadingType"/>
+        <rdfs:label>TAKEOFF</rdfs:label>
+        <rdfs:comment>Take-off or rollout point.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeRVRReadingType-TOUCHDOWN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeRVRReadingType-TOUCHDOWN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeRVRReadingType"/>
+        <rdfs:label>TOUCHDOWN</rdfs:label>
+        <rdfs:comment>Touchdown</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeRVRTendencyType-D -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeRVRTendencyType-D">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeRVRTendencyType"/>
+        <rdfs:label>D</rdfs:label>
+        <rdfs:comment>Downward RVR tendency</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeRVRTendencyType-N -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeRVRTendencyType-N">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeRVRTendencyType"/>
+        <rdfs:label>N</rdfs:label>
+        <rdfs:comment>No RVR change tendency</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeRVRTendencyType-U -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeRVRTendencyType-U">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeRVRTendencyType"/>
+        <rdfs:label>U</rdfs:label>
+        <rdfs:comment>Upward RVR tendency</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType-CALM_GLASSY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType-CALM_GLASSY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:label>CALM_GLASSY</rdfs:label>
+        <rdfs:comment>Height in metres = 0</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType-CALM_RIPPLED -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType-CALM_RIPPLED">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:label>CALM_RIPPLED</rdfs:label>
+        <rdfs:comment>Height in metres between 0 and 0.1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType-HIGH -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType-HIGH">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:label>HIGH</rdfs:label>
+        <rdfs:comment>Height in metres between 6 and 9</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType-MODERATE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType-MODERATE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:label>MODERATE</rdfs:label>
+        <rdfs:comment>Height in metres between 1.25 and 2.5</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType-PHENOMENAL -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType-PHENOMENAL">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:label>PHENOMENAL</rdfs:label>
+        <rdfs:comment>Height in metres over 14</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType-ROUGH -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType-ROUGH">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:label>ROUGH</rdfs:label>
+        <rdfs:comment>Height in metres between 2.5 and 4</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType-SLIGHT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType-SLIGHT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:label>SLIGHT</rdfs:label>
+        <rdfs:comment>Height in metres between 0.5 and 1.25</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType-SMOOTH_WAVELETS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType-SMOOTH_WAVELETS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:label>SMOOTH_WAVELETS</rdfs:label>
+        <rdfs:comment>Height in metres between 0.1 and 0.5</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType-VERY_HIGH -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType-VERY_HIGH">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:label>VERY_HIGH</rdfs:label>
+        <rdfs:comment>Height in metres between 9 and 14</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSeaStateType-VERY_ROUGH -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSeaStateType-VERY_ROUGH">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSeaStateType"/>
+        <rdfs:label>VERY_ROUGH</rdfs:label>
+        <rdfs:comment>Height in metres between 4 and 6</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-BLOWING -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-BLOWING">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType"/>
+        <rdfs:label>BLOWING</rdfs:label>
+        <rdfs:comment>Raised by the wind to a moderate height above the ground (2 meters or more).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-FREEZING -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-FREEZING">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType"/>
+        <rdfs:label>FREEZING</rdfs:label>
+        <rdfs:comment>Precipitation freezing on impact on the ground and on exposed objects.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-LOW_DRIFTING -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-LOW_DRIFTING">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType"/>
+        <rdfs:label>LOW_DRIFTING</rdfs:label>
+        <rdfs:comment>In motion due to the action of wind or raised by the wind to a small height above the ground (less than 2 meters).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-PARTIAL -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-PARTIAL">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType"/>
+        <rdfs:label>PARTIAL</rdfs:label>
+        <rdfs:comment>Covering part of the aerodrome.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-PATCHES -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-PATCHES">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType"/>
+        <rdfs:label>PATCHES</rdfs:label>
+        <rdfs:comment>Occurrences over small areas.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-PROXIMITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-PROXIMITY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType"/>
+        <rdfs:label>PROXIMITY</rdfs:label>
+        <rdfs:comment>The weather phenomenon is observed between approximately 8 km and 16 km from the aerodrome reference point.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-SHALLOW -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-SHALLOW">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType"/>
+        <rdfs:label>SHALLOW</rdfs:label>
+        <rdfs:comment>Has a very little vertical extent.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-SHOWER -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-SHOWER">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType"/>
+        <rdfs:label>SHOWER</rdfs:label>
+        <rdfs:comment>Precipitation, often short-lived and heavy, falling from convective clouds. A shower is characterized by its sudden beginning and ending, and generally by large and rapid changes of intensity. </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-THUNDERSTORM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType-THUNDERSTORM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeSignificantWeatherQualifierType"/>
+        <rdfs:label>THUNDERSTORM</rdfs:label>
+        <rdfs:comment>Sudden electrical discharges manifested by a flash of light (lightning) and a sharp or rumbling sound (thunder). Thunderstorms are associated with convective clouds (Cumulonimbus) and are, more often, accompanied by precipitation in the form of rainshowers or hail, or occasionally snow, snow pellets, or ice pellets. </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTurbulenceType-CLEAR_AIR_TURBULENCE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTurbulenceType-CLEAR_AIR_TURBULENCE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTurbulenceType"/>
+        <rdfs:label>CLEAR_AIR_TURBULENCE</rdfs:label>
+        <rdfs:comment>Upper-atmospheric turbulence encountered by an aircraft when flying through clear air.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeTurbulenceType-IN_CLOUD_TURBULENCE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeTurbulenceType-IN_CLOUD_TURBULENCE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeTurbulenceType"/>
+        <rdfs:label>IN_CLOUD_TURBULENCE</rdfs:label>
+        <rdfs:comment>Upper-atmospheric turbulence encountered by an aircraft when flying through a cloud.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType-BETWEEN_11_AND_25_PERCENT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType-BETWEEN_11_AND_25_PERCENT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType"/>
+        <rdfs:label>BETWEEN_11_AND_25_PERCENT</rdfs:label>
+        <rdfs:comment>Between 11% and 25%</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType-BETWEEN_26_AND_50_PERCENT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType-BETWEEN_26_AND_50_PERCENT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType"/>
+        <rdfs:label>BETWEEN_26_AND_50_PERCENT</rdfs:label>
+        <rdfs:comment>Between 26% and 50%</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType-LESS_THAN_10_PERCENT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType-LESS_THAN_10_PERCENT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType"/>
+        <rdfs:label>LESS_THAN_10_PERCENT</rdfs:label>
+        <rdfs:comment>Less than 10%</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType-MORE_THAN_50_PERCENT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType-MORE_THAN_50_PERCENT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeValueContaminationExtentType"/>
+        <rdfs:label>MORE_THAN_50_PERCENT</rdfs:label>
+        <rdfs:comment>More than 50%</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-HEAVY -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-HEAVY">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType"/>
+        <rdfs:label>HEAVY</rdfs:label>
+        <rdfs:comment>A heavy intensity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-LIGHT -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-LIGHT">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType"/>
+        <rdfs:label>LIGHT</rdfs:label>
+        <rdfs:comment>A light intensity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-LIGHT_MODERATE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-LIGHT_MODERATE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType"/>
+        <rdfs:label>LIGHT_MODERATE</rdfs:label>
+        <rdfs:comment>A light to moderate intensity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-MODERATE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-MODERATE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType"/>
+        <rdfs:label>MODERATE</rdfs:label>
+        <rdfs:comment>A moderate intensity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-MODERATE_SEVERE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-MODERATE_SEVERE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType"/>
+        <rdfs:label>MODERATE_SEVERE</rdfs:label>
+        <rdfs:comment>A moderate to severe intensity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-NONE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-NONE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType"/>
+        <rdfs:label>NONE</rdfs:label>
+        <rdfs:comment>A report of no intensity (no icing present, for example) for a condition.  This is different from missing information.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-SEVERE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-SEVERE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType"/>
+        <rdfs:label>SEVERE</rdfs:label>
+        <rdfs:comment>A severe intensity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-UNKNOWN -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType-UNKNOWN">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherIntensityType"/>
+        <rdfs:label>UNKNOWN</rdfs:label>
+        <rdfs:comment>A report of unknown intensity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-DUST_STORM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-DUST_STORM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:label>DUST_STORM</rdfs:label>
+        <rdfs:comment>An ensemble of particles of dust energetically lifted to great heights by a strong and turbulent wind. </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-DUST_WHIRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-DUST_WHIRL">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:label>DUST_WHIRL</rdfs:label>
+        <rdfs:comment>An ensemble of particles of dust or sand, sometimes accompanied by small litter, raised from the ground in the form of a whirling column of varying height with a small diameter and an approximately vertical axis. </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-FUNNEL_CLOUD -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-FUNNEL_CLOUD">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:label>FUNNEL_CLOUD</rdfs:label>
+        <rdfs:comment>Cloud formed at the core of a waterspout or tornado vortex, sometimes extending right down to the ground, caused by the reduction of pressure at the centre of the vortex.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-LIGHTNING -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-LIGHTNING">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:label>LIGHTNING</rdfs:label>
+        <rdfs:comment>Luminous manifestation accompanying a sudden electrical discharge which takes place from or inside a cloud or, less often, from high structures on the ground or from mountains.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-MOUNTAIN_OBSCURATION -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-MOUNTAIN_OBSCURATION">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:label>MOUNTAIN_OBSCURATION</rdfs:label>
+        <rdfs:comment>Description of a visibility condition that is distinguished from IFR because ceilings, by definition, are described as &quot;above ground level&quot; (AGL). In mountainous terrain clouds can form at altitudes significantly higher than the weather reporting station and at the same time nearby mountain tops may be obscured by low visibility. In these areas the ground level can also vary greatly over a small area. </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-MOUNTAIN_WAVE -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-MOUNTAIN_WAVE">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:label>MOUNTAIN_WAVE</rdfs:label>
+        <rdfs:comment>Atmospheric internal gravity waves, which are periodic changes of atmospheric pressure, temperature and orthometric height in a current of air.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-RADIOACTIVE_CLOUD -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-RADIOACTIVE_CLOUD">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:label>RADIOACTIVE_CLOUD</rdfs:label>
+        <rdfs:comment>A radioactive particulate contaminated atmospheric area.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-SANDSTORM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-SANDSTORM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:label>SANDSTORM</rdfs:label>
+        <rdfs:comment>An ensemble of particles of sand energetically lifted to great heights by a strong and turbulent wind.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-SQUALL -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-SQUALL">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:label>SQUALL</rdfs:label>
+        <rdfs:comment> Atmospheric phenomenon characterized by an abrupt and large increase of wind speed with a duration of the order of minutes which diminishes rather suddenly. It is often accompanied by showers or thunderstorms.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-TEMPERATURE_INVERSION -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType-TEMPERATURE_INVERSION">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWeatherPhenomenonType"/>
+        <rdfs:label>TEMPERATURE_INVERSION</rdfs:label>
+        <rdfs:comment>Vertical temperature distribution such that temperature increases with height.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType-100_KNOTS -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType-100_KNOTS">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType"/>
+        <rdfs:label>100_KNOTS</rdfs:label>
+        <rdfs:comment>Forecasted wind on airport surface is more than 100kt (200 Km/h)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType-CALM -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType-CALM">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType"/>
+        <rdfs:label>CALM</rdfs:label>
+        <rdfs:comment>Wind direction on airport surface is irrelevant, wind is less than 1kt
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType-NORMAL -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType-NORMAL">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType"/>
+        <rdfs:label>NORMAL</rdfs:label>
+        <rdfs:comment>Wind on airport surface is normally described through the direction attribute
+</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType-VRB -->
+
+    <owl:NamedIndividual rdf:about="http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType-VRB">
+        <rdf:type rdf:resource="http://www.best-project.org/owl/AIRM#CodeWindCharacteristicType"/>
+        <rdfs:label>VRB</rdfs:label>
+        <rdfs:comment>Wind direction on airport surface is variable
+</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+

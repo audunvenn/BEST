@@ -1,0 +1,24 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3schools.com" elementFormDefault="qualified">
+    <xsd:complexType name="SomethingOne">
+        <xsd:sequence>
+            <xsd:element name="Id" type="xsd:int"/>
+            <xsd:element name="Time" type="xsd:string"/>
+            <xsd:element name="Location" type="xsd:string"/>
+            <xsd:element name="Building" type="xsd:string"/>
+            <xsd:element name="Comments" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="SomethingTwo">
+        <xsd:sequence>
+            <xsd:element name="Id" type="xsd:int"/>
+            <xsd:element name="Time" type="xsd:string"/>
+            <xsd:element name="Location" type="xsd:string"/>
+            <xsd:element name="Building" type="xsd:string"/>
+            <xsd:element name="Phone" type="xsd:string"/>
+            <xsd:element name="Device" type="xsd:string"/>
+            <xsd:element name="Protocol" type="xsd:string"/>
+            <xsd:element name="Comments" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
