@@ -189,8 +189,8 @@ public class ISub {
 		
 		ISub i = new ISub();
 		
-		String s1 = "book";
-		String s2 = "cook";
+		String s1 = "&A code indicating whether the controlling obstacle penetrates the assessment surfaces.&";
+		String s2 = "&A code indicating whether the visual approach slope indicator system is a portable one.&@en";
 		
 		double result = i.score(s1, s2);
 		

@@ -8,10 +8,10 @@
   <xml>yes</xml>
   <level>0</level>
   <type>**</type>
-  <alext:method>compliancevalidator.matchers.ISubMatcher#clone</alext:method>
+  <alext:method>compliancevalidator.matchers.equivalence.ISubMatcher#clone</alext:method>
   <onto1>
     <Ontology rdf:about="http://www.best-project.org/owl/AIRM">
-      <location>file:/Users/audunvennesland/git/Compose/compose/./files/BEST/airm_mono.owl</location>
+      <location>file:/Users/audunvennesland/git/best/Best/./files/BEST/airm/airm_mono.owl</location>
       <formalism>
         <Formalism align:name="OWL2.0" align:uri="http://www.w3.org/2002/07/owl#"/>
       </formalism>
@@ -19,7 +19,7 @@
   </onto1>
   <onto2>
     <Ontology rdf:about="http://project-best.eu/owl/aixm/airportheliport">
-      <location>file:/Users/audunvennesland/git/Compose/compose/./files/BEST/aixm_airportheliport.owl</location>
+      <location>file:/Users/audunvennesland/git/best/Best/./files/BEST/aixm/ontologies/aixm_airportheliport.owl</location>
       <formalism>
         <Formalism align:name="OWL2.0" align:uri="http://www.w3.org/2002/07/owl#"/>
       </formalism>

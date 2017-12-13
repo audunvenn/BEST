@@ -19,14 +19,14 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 
-import compliancevalidator.matchers.CompoundMatcher;
-import compliancevalidator.matchers.EditMatcher;
-import compliancevalidator.matchers.ISubMatcher;
-import compliancevalidator.matchers.InstanceMatcher;
-import compliancevalidator.matchers.PropEq_String_Matcher;
-import compliancevalidator.matchers.PropEq_WordNet_Matcher;
-import compliancevalidator.matchers.Subsumption_WordNet_Matcher;
-import compliancevalidator.matchers.WordNetMatcher;
+import compliancevalidator.matchers.equivalence.EditMatcher;
+import compliancevalidator.matchers.equivalence.ISubMatcher;
+import compliancevalidator.matchers.equivalence.InstanceMatcher;
+import compliancevalidator.matchers.equivalence.WordNetMatcher;
+import compliancevalidator.matchers.properties.PropEq_String_Matcher;
+import compliancevalidator.matchers.properties.PropEq_WordNet_Matcher;
+import compliancevalidator.matchers.subsumption.CompoundMatcher;
+import compliancevalidator.matchers.subsumption.Subsumption_WordNet_Matcher;
 import compliancevalidator.misc.StringUtils;
 import fr.inrialpes.exmo.align.impl.BasicAlignment;
 import fr.inrialpes.exmo.align.impl.renderer.RDFRendererVisitor;
@@ -47,8 +47,8 @@ public class TestMatcher {
 		//File ontoFile1 = new File("./files/wndomainexperiment/SchemaOrg/schema-org.owl");
 		//File ontoFile2 = new File("./files/wndomainexperiment/efrbroo.owl");
 		
-		File ontoFile1 = new File("./files/BEST/airm_mono.owl");
-		File ontoFile2 = new File("./files/BEST/aixm_airportheliport.owl");
+		File ontoFile1 = new File("./files/BEST/airm/airm_mono.owl");
+		File ontoFile2 = new File("./files/BEST/aixm/ontologies/aixm_airportheliport.owl");
 		//File ontoFile1 = new File("./files/Path/schema-org.owl");
 		//File ontoFile2 = new File("./files/Path/schema-org.owl");
 		

@@ -155,6 +155,15 @@ public class StringUtils {
 
 		return s;
 	}
+	
+	//line1 = line1.replace("\"", "");
+	public static String removeSymbols(String s) {
+		s = s.replace("\"", "");
+		s = s.replace(".", "");
+		s = s.replace("@en", "");
+		
+		return s;
+	}
 
 	/**
 	 * Takes a filename as input and removes the IRI prefix from this file

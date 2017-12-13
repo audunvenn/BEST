@@ -1,4 +1,4 @@
-package compliancevalidator.matchers;
+package compliancevalidator.matchers.equivalence;
 
 /**
  * @author audunvennesland

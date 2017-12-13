@@ -1,4 +1,4 @@
-package compliancevalidator.matchers;
+package compliancevalidator.matchers.properties;
 
 import java.util.Properties;
 

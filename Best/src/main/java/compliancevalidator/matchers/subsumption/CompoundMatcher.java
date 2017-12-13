@@ -1,4 +1,4 @@
-package compliancevalidator.matchers;
+package compliancevalidator.matchers.subsumption;
 
 
 import java.util.ArrayList;
